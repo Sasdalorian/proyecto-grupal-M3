@@ -24,10 +24,16 @@
 .nav-icono-carrito {
     height: 2.4rem;
 }
+.nav-icono-buscador {
+    height: 2rem;
+}
 .nav-iconos {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+.navbar-left {
+    font-size: 1.2rem;
 }
 /* color de fondo */
 body{
