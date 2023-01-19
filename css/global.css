@@ -1,0 +1,5 @@
+/* BARRA DE NAVEGACION */
+.navbar-collapse {
+    display: flex;
+    justify-content: end;
+}
