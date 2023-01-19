@@ -35,6 +35,11 @@
 .navbar-left {
     font-size: 1.2rem;
 }
+.buscadornav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+}
 /* color de fondo */
 body{
     background: #8EA3AD;
