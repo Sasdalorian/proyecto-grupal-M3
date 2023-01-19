@@ -2,12 +2,26 @@
 .navbar-collapse {
     display: flex;
     justify-content: end;
+    height: 3rem;
+    font-size: 1.3rem;
 }
-
+.navbar-brand {
+    font-size: 1.5rem;
+    display: flex;
+    gap: .5rem;
+}
+#logo {
+    height: 2.5rem;
+    width: 2.5rem;
+}
 /* color de fondo */
 body{
-    background-image: linear-gradient(to left bottom, #625f68, #777884, #8d93a0, #a2afbc, #b8ccd7, #b5d0dc, #b2d5e0, #aed9e3, #8fc6d2, #6fb2c1, #4ca0b1, #198da1);
-}
+    background: #8EA3AD;
+    background: -moz-linear-gradient(-45deg, #8EA3AD 0%, #B2D5E0 52%, #198DA1 100%);
+    background: -webkit-linear-gradient(-45deg, #8EA3AD 0%, #B2D5E0 52%, #198DA1 100%);
+    background: linear-gradient(135deg, #8EA3AD 0%, #B2D5E0 52%, #198DA1 100%);
+    height: auto;
+}    
 
 /*footer*/
 .rrss{
