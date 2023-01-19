@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    
+
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <form name="contactame" action="/my-handling-form-page" method="post">
+      <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Correo Electronico</label>
+      <input class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="correo@ejemplo.com"></input>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+      <textarea name= "comentarios" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button onclick= "botonalerta()" type="button">enviar</button>
+    </form>
+  </main>
+  <footer>
+    <a href="./cachureando.html">Regresar al inicio</a>
+  </footer>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./script/navbar.js"></script>
+</body>
+</html>
+
