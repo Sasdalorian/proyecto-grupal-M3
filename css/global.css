@@ -2,8 +2,9 @@
 .navbar-collapse {
     display: flex;
     justify-content: end;
-    height: 3rem;
+    height: 3.3rem;
     font-size: 1.3rem;
+    text-align: center;
 }
 .navbar-brand {
     font-size: 1.5rem;
@@ -13,6 +14,20 @@
 #logo {
     height: 2.5rem;
     width: 2.5rem;
+}
+.navbar-nav {
+    gap: 1rem;
+}
+.nav-icono-login {
+    height: 3rem;
+}
+.nav-icono-carrito {
+    height: 2.4rem;
+}
+.nav-iconos {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 /* color de fondo */
 body{
