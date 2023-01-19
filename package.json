@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.31",
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3",
+    "skitter-slider": "^5.1.4"
+  }
+}

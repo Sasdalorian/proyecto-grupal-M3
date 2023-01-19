@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDowell’s Contacto</title>
+    <link rel="icon" href="/img/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/scss/custom.css">
+    <link rel="stylesheet" href="/scss/productos.css">
+    <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    
+    
+  </head> 
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg  bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="mcdowells" href="/index.html"><img src="/img/icon/mcdowells_logo.png" style="max-width: 150px;"
+              id="nuestrosproductos"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/contacto.html">Contacto</a>
+              </li>
+    
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid bg-warning" id="separadornav">&nbsp; </div>
+    <h1 class="contacto container-fluid  tituloproductos ">Contacto</h1>
+    <div class="container-fluid bg-warning" id="separador">&#160 </div>
+    <main id="main-contacto" class="form-floating p-5 ">
+      <form class="row g-3 needs-validation form-floating p-1" id="formulario" novalidate>
+        <div class="col-md-3 form-floating">
+          <input type="text" class="form-control" id="nombre-contacto" required>
+          <label for="nombre-contacto" class="form-label">Nombre</label>
+          <div class="valid-feedback">
+            Ok!
+          </div>
+          <div class="invalid-feedback">
+            Debes ingresar un nombre
+          </div>
+        </div>
+        <div class="col-md-3 form-floating">
+          <input type="text" class="form-control" id="apellido-contacto" required>
+          <label for="apellido-contacto" class="form-label">Apellido</label>
+          <div class="valid-feedback">
+            Ok!
+          </div>
+          <div class="invalid-feedback">
+            Debes ingresar un apellido
+          </div>
+        </div>
+        <div class="row-md-3 form-floating">
+          <input type="email" class="form-control" id="correo-contacto" required>
+          <label for="correo-contacto" class="floatingInput">Correo</label>
+          <div class="valid-feedback">
+            Ok!
+          </div>
+          <div class="invalid-feedback">
+            Proporciona un correo válido
+          </div>
+        </div>
+        <div class="row-md-2 form-floating ">
+          <select onchange="desplegarComuna()" id="region-contacto" class="form-select form-floating pt-2" required>
+            <option value="">Region</option>
+            <option value="arica">Arica y Parinacota</option>
+            <option value="tarapaca">Tarapacá</option>
+            <option value="antofagasta">Antofagasta</option>
+            <option value="atacama">Atacama</option>
+            <option value="coquimbo">Coquimbo</option>
+            <option value="valparaiso">Valparaíso</option>
+            <option value="o’Higgins">Región del Libertador Gral. Bernardo O’Higgins</option>
+            <option value="maule">Región del Maule</option>
+            <option value="biobio">Región del Biobío</option>
+            <option value="araucania">Región de la Araucanía</option>
+            <option value="rios">Región de Los Ríos</option>
+            <option value="lagos">Región de Los Lagos</option>
+            <option value="aisen">Región Aisén del Gral. Carlos Ibáñez del Campo</option>
+            <option value="magallanes">Región de Magallanes y de la Antártica Chilena</option>
+            <option value="metropolitana">Región Metropolitana de Santiago</option>
+          </select>
+          <div class="valid-feedback">
+            Ok!
+          </div>
+          <div class="invalid-feedback">
+            Seleciona una región válida.
+          </div>
+        </div>
+        <div class="row-md-2 form-floating">
+          <select  id="comuna-contacto" class="form-select form-floating" required>
+            <option value="">Comuna</option>
+          </select>
+          <div class="valid-feedback">
+            Ok!
+          </div>
+          <div class="invalid-feedback">
+            Selecciona una comuna válida.
+          </div>
+        </div>
+        <div class="row-md-6 ">
+          <div>
+            <textarea class="form-control" placeholder="Ingresa el mensaje aquí" id="area-texto" style="height: 100px" required></textarea>
+          </div>
+          <div class="valid-feedback">
+            Ok!
+          </div>
+          <div class="invalid-feedback">
+            Ingresa un mensaje
+          </div>
+        </div>
+        <div class="col-12">
+          <button id="boton-formulario" class="boton" type="submit" onclick="alerta()">Enviar mensaje</button>
+        </div>
+      </form>
+    </main>
+    
+   
+
+    <div id="prueba-alerta" style="display: none;" >
+      <div id="marco-alerta" class="p-3 rounded-5" >
+        <label for="aceptar" id="etiqueta-alerta">
+          <p >Faltan los siguientes campos:</p>
+          <ul id="lista-alerta" class="pt-2" ></ul>
+        </label>
+        <button class="boton" id="aceptar" onclick="ocultarDiv()">Aceptar</button>
+      </div>
+    </div>
+
+    <div id="confirmacion-envio" style="display: none;" >
+      <div id="marco-alerta" class="p-3 rounded-5" >
+        <label for="aceptar" id="etiqueta-alerta">
+          <p >Mensaje enviado</p>
+          <ul id="lista-alerta" class="pt-2" ></ul>
+        </label>
+        <button class="boton"  id="aceptar" onclick="ocultarConfirmacion()">Aceptar</button>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="/js/jquery-3.6.3.min.js" ></script> 
+    <script src="/js/alerta-contacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+      (function () {
+        'use strict'
+      
+        // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+        var forms = document.querySelectorAll('.needs-validation')
+      
+        // Bucle sobre ellos y evitar el envío
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+      
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()
+    </script>
+    
+    <div class="container-fluid bg-warning" id="separador2">&#160 </div>
+    <footer>
+      <div class="pie">
+
+        <div class="footEquipo">
+          <p>EQUIPO:</p>
+          <ul>
+            <li>Manuel Muñoz</li>
+            <li>Andrea Alvarez</li>
+            <li>Juan Salas</li>
+          </ul>
+        </div>
+        <div class="footIcon">
+          <ul>
+            <!-- <li> <img src="/img/icon/fb_amarillo.png" style="max-width: 20px;"></li> -->
+            <a class="fancybox" href="#"> <img src="/img/icon/fb_amarillo.png" width="20px" alt=""></a>
+            <a class="fancybox" href="#"> <img src="/img/icon/ig_amarillo.png" width="20px" alt=""></a>
+          </ul>
+        </div>
+        <div class="footLogo">
+          <a href="#nuestrosproductos"><img src="/img/icon/mcdowells_logo_amarillo.png" width="200px" alt=""></a>
+        </div>
+      </div>
+
+    </footer>
+   
+  </body>
+  
+</html>
