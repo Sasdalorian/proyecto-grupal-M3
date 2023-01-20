@@ -66,7 +66,7 @@
                         </li>
                         <div class="nav-iconos">
                           <li class="nav-item">
-                            <a href="#">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#carro">
                               <img class="nav-icono-carrito" src="https://img.icons8.com/material-rounded/100/FFFFFF/shopping-cart-loaded.png"/>
                             </a>
                           </li>
@@ -84,10 +84,46 @@
         <br><br>
         
         <main >
-            <div class="row mt-5" id="contenedorCard" style="justify-content: center"></div>
-           
-        </main>
+            
+            <div class="row mt-5 carousel" id="contenedorCard" style="justify-content: center"></div>
 
+            <div class="modal fade" id="carro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Título del modal</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="contenidoCarro">
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="detalleProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                <div class="modal-dialog" >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="titulo"></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="cuerpoDescripcion">
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Agregar al carro</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </main>
+       
         <!-- FOOTER -->
         <footer>
           <div class="contenedor-redes-sociales">
@@ -117,6 +153,10 @@
         <script src="./script/navbar.js"></script>
         <script src="/node_modules/jquery/dist/jquery.min.js"></script>
         <script src="/js/cards.js"></script>
+        <script src="/js/carro.js"></script>
+        <script type="module">
+            import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
+          </script>
     </body>
 </html>
 
