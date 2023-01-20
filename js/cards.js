@@ -258,6 +258,7 @@ var selecCantidad;
 var labelCantidad;
 var i = 0;
 var index;
+var precio;
 
 //Función creadora de cards
 function creacionCards(element,index){
@@ -279,12 +280,17 @@ function creacionCards(element,index){
     tituloCard = document.createElement("h5");
     tituloCard.className = "card-title";
     tituloCard.textContent = element[index].nombre;
+    tituloCard.style = "justify-content: center;display: flex;"
 
     descripcionCard = document.createElement("p");
     descripcionCard.className = "card-text";
     descripcionCard.textContent = element[index].descripcion;
     descripcionCard.id = "descripcion-"+i;
     descripcionCard.style = "padding: 10%;";
+
+    precio = document.createElement("h2");
+    precio.className = "card-text";
+    precio.textContent = "$" + element[index].precio;
     
 
 
@@ -324,6 +330,7 @@ function creacionCards(element,index){
     divMedio.append(footerCard)
     divInterno.append(tituloCard);
     divInterno.append(descripcionCard);
+    divInterno.append(precio)
     divAgregar.append(labelcheck)
     divAgregar.append(checkbox)
     divCantidad.append(labelCantidad);
@@ -356,7 +363,6 @@ if($("#mainIndex").val() =="1"){ //solo en el index generará 5 cards, en el res
             }
     
         }
-        console.log("Random 1: "+random1+" Random 2: " + random2)
         var arreglo = infoproducto[random1];
         creacionCards(arreglo,random2);
     }
