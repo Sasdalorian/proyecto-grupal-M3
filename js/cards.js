@@ -260,7 +260,7 @@ var labelCantidad;
 var i = 0;
 var index;
 var precio;
-var linkImagen;
+
 
 //Función creadora de cards
 function creacionCards(element,index){
@@ -394,5 +394,4 @@ if($("#mainIndex").val() =="1"){ //solo en el index generará 5 cards, en el res
         creacionCards(arreglo,random2);
     }
 }
-
 
