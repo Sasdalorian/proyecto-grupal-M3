@@ -2,16 +2,89 @@ var infoproducto = [
     
     [
         {
-            nombre: "producto 1 - 0",
-            imagen: "/img/poleras/Jordan-Flight.png",
+            nombre: "Zapatillas Blaze Court",
+            imagen: "/img/calzado/blaze-court.png",
             codigo: 1234567890,
+<<<<<<< HEAD
+            descripcion: "zapatilla de basquetball unisex",
+            precio: 00000
+=======
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
             precio: 13.45
+>>>>>>> 172252ee2869246badf9e384b3f0f8545a187d7a
         },
         {
-            nombre: "producto 2 - 0",
-            imagen: "/img/poleras/Jordan-Flight2.png",
+            nombre: "Zapatilla Deviaten Nitro",
+            imagen: "/img/calzado/deviaten-nitro.png",
             codigo: 1234567890,
+<<<<<<< HEAD
+            descripcion: "zapatilla running mujer color verde",
+            precio: 00000
+
+        },
+        {
+            nombre: "Zapatilla Florence",
+            imagen: "/img/calzado/florence.png",
+            codigo: 1234567890,
+            descripcion: "zapatillas urbanas mujer",
+            precio: 00000
+
+        },
+        {
+            nombre: "Zapatillas Magnify Nitro",
+            imagen: "/img/calzado/magnify-nitro.png",
+            codigo: 1234567890,
+            descripcion: "zapatillas running hombre color rojo",
+            precio: 00000
+
+        },
+        {
+            nombre: "Zapatilla Mercurial Victory",
+            imagen: "/img/calzado/mercurial-victory.png",
+            codigo: 1234567890,
+            descripcion: "zapatillas baby futbol unisex",
+            precio: 00000
+
+        },
+        {
+            nombre: "Zapatos Mercury",
+            imagen: "/img/calzado/mercury.jfif",
+            codigo: 1234567890,
+            descripcion: "Zapatos de futbol mujer color dorado ",
+            precio: 00000
+
+        },
+        {
+            nombre: "Zapatillas Slip Stream",
+            imagen: "/img/calzado/slipstream.png",
+            codigo: 1234567890,
+            descripcion: "zapatilla urbana de caña alta unisex ",
+            precio: 00000
+
+        },
+        {
+            nombre: "Zapatilla Suede Classic XXI",
+            imagen: "/img/calzado/suede-classicxxi.png",
+            codigo: 1234567890,
+            descripcion: "Zapatilla urbana mujer color rosado",
+            precio: 00000
+
+        },
+        {
+            nombre: "Zapatos Superfly",
+            imagen: "/img/calzado/superfly.jfif",
+            codigo: 1234567890,
+            descripcion: "Zapato de futbol hombre color rojo",
+            precio: 00000
+
+        },
+        {
+            nombre: "Zapatillas Voyage Nitro",
+            imagen: "/img.calzado/voyage-nitro.png",
+            codigo: 1234567890,
+            descripcion: "zapatillas running hombre color negro",
+            precio: 00000
+=======
             descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
             precio: 13.45
 
@@ -78,10 +151,89 @@ var infoproducto = [
             codigo: 1234567,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
             precio: 13.45
+>>>>>>> 172252ee2869246badf9e384b3f0f8545a187d7a
 
     }],
     [
         {
+<<<<<<< HEAD
+            nombre: "Camiseta Seleccion Argentina",
+            imagen: "/img/camisetas/argentina.png",
+            codigo: 1234567890,
+            descripcion: "Camiseta oficial seleccion Argentina 3 estrellas",
+            precio: 00000
+        },
+        {
+            nombre: "Camiseta Barcelona",
+            imagen: "/img/camisetas/barca.jfif",
+            codigo: 1234567890,
+            descripcion: "Camiseta Barcelona 22-23 Oficial",
+            precio: 00000
+
+        },
+        {
+            nombre: "Camiseta Boca Juniors",
+            imagen: "/img/camisetas/boca.jfif",
+            codigo: 1234567890,
+            descripcion: "Nueva camiseta de Boca oficial y de visitante",
+            precio: 00000
+
+        },
+        {
+            nombre: "Camiseta seleccion chilena",
+            imagen: "/img/camisetas/chile.jfif",
+            codigo: 1234567890,
+            descripcion: "Camiseta seleccion chilena local  22-23 oficial",
+            precio: 00000
+
+        },
+        {
+            nombre: "Camiseta Jordan Flight",
+            imagen: "/img/camisetas/jordan-flight.png",
+            codigo: 1234567890,
+            descripcion: "Camiseta diseno zapatillas Jordan color negra",
+            precio: 00000
+
+        },
+        {
+            nombre: "Camiseta Jordan",
+            imagen: "/img/camisetas/jordan3.png",
+            codigo: 1234567890,
+            descripcion: "Camiseta diseno Jordan color negra",
+            precio: 00000
+
+        },
+        {
+            nombre: "Camiseta Jordan Flight",
+            imagen: "/img/camisetas/jordan-flight.png",
+            codigo: 1234567890,
+            descripcion: "Camiseta Jordan Flight mujer diseno espalda color roja",
+            precio: 00000
+
+        },
+        {
+            nombre: "Camiseta Lebron",
+            imagen: "/img/camisetas/lebron.png",
+            codigo: 1234567890,
+            descripcion: "Camiseta basquetball oficial Lebron",
+            precio: 00000
+
+        },
+        {
+            nombre: "Camiseta PSG",
+            imagen: "/img/camisetas/psg.jfif",
+            codigo: 1234567890,
+            descripcion: "Camiseta primera equipacion PSG 22-23 oficial",
+            precio: 00000
+
+        },
+        {
+            nombre: "Camiseta Running",
+            imagen: "/img/camisetas/runningmc/jfif",
+            codigo: 1234567890,
+            descripcion: "Camiseta running mujer manga corta diseno team colores ",
+            precio: 00000
+=======
             nombre: "producto 1 - 1",
             imagen: "/img/poleras/Jordan-Flight.png",
             codigo: 1234567890,
@@ -159,6 +311,7 @@ var infoproducto = [
             codigo: 1234567,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
             precio: 13.45
+>>>>>>> 172252ee2869246badf9e384b3f0f8545a187d7a
 
         }
     
