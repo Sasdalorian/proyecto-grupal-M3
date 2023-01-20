@@ -1,82 +1,83 @@
 var infoproducto = [
+    
     [
-    {
-        nombre: "producto 1 - 0",
-        imagen: "/src",
-        codigo: 1234567890,
-        descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-        precio: 00000
-    },
-    {
-        nombre: "producto 2 - 0",
-        imagen: "/src",
-        codigo: 1234567890,
-        descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-        precio: 00000
+        {
+            nombre: "producto 1 - 0",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+        },
+        {
+            nombre: "producto 2 - 0",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
 
-    },
-    {
-        nombre: "producto 3 - 0",
-        imagen: "/src",
-        codigo: 1234567890,
-        descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-        precio: 00000
+        },
+        {
+            nombre: "producto 3 - 0",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
 
-    },
-    {
-        nombre: "producto 4 - 0",
-        imagen: "/src",
-        codigo: 1234567890,
-        descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-        precio: 00000
+        },
+        {
+            nombre: "producto 4 - 0",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
 
-    },
-    {
-        nombre: "producto 5 - 0",
-        imagen: "/src",
-        codigo: 1234567890,
-        descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-        precio: 00000
+        },
+        {
+            nombre: "producto 5 - 0",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
 
-    },
-    {
-        nombre: "producto 6 - 0",
-        imagen: "/src",
-        codigo: 1234567890,
-        descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-        precio: 00000
+        },
+        {
+            nombre: "producto 6 - 0",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
 
-    },
-    {
-        nombre: "producto 7 - 0",
-        imagen: "/src",
-        codigo: 1234567890,
-        descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-        precio: 00000
+        },
+        {
+            nombre: "producto 7 - 0",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
 
-    },
-    {
-        nombre: "producto 8 - 0",
-        imagen: "/src",
-        codigo: 1234567890,
-        descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-        precio: 00000
+        },
+        {
+            nombre: "producto 8 - 0",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
 
-    },
-    {
-        nombre: "producto 9 - 0",
-        imagen: "/src",
-        codigo: 1,
-        descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-        precio: 00000
+        },
+        {
+            nombre: "producto 9 - 0",
+            imagen: "/src",
+            codigo: 1,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
 
-    },
-    {
-        nombre: "producto 10 - 0",
-        imagen: "/qweqweqew",
-        codigo: 1234567,
-        descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-        precio: 00000
+        },
+        {
+            nombre: "producto 10 - 0",
+            imagen: "/qweqweqew",
+            codigo: 1234567,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
 
     }],
     [
@@ -93,7 +94,7 @@ var infoproducto = [
             codigo: 1234567890,
             descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
             precio: 00000
-    
+
         },
         {
             nombre: "producto 3 - 1",
@@ -101,7 +102,7 @@ var infoproducto = [
             codigo: 1234567890,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
             precio: 00000
-    
+
         },
         {
             nombre: "producto 4 - 1",
@@ -109,7 +110,7 @@ var infoproducto = [
             codigo: 1234567890,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
             precio: 00000
-    
+
         },
         {
             nombre: "producto 5 - 1",
@@ -117,7 +118,7 @@ var infoproducto = [
             codigo: 1234567890,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
             precio: 00000
-    
+
         },
         {
             nombre: "producto 6 - 1",
@@ -125,7 +126,7 @@ var infoproducto = [
             codigo: 1234567890,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
             precio: 00000
-    
+
         },
         {
             nombre: "producto 7 - 1",
@@ -133,7 +134,7 @@ var infoproducto = [
             codigo: 1234567890,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
             precio: 00000
-    
+
         },
         {
             nombre: "producto 8 - 1",
@@ -141,7 +142,7 @@ var infoproducto = [
             codigo: 1234567890,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
             precio: 00000
-    
+
         },
         {
             nombre: "producto 9 - 1",
@@ -149,7 +150,7 @@ var infoproducto = [
             codigo: 1,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
             precio: 00000
-    
+
         },
         {
             nombre: "producto 10 - 1",
@@ -157,7 +158,7 @@ var infoproducto = [
             codigo: 1234567,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
             precio: 00000
-    
+
         }
     
     ],
@@ -333,31 +334,56 @@ function creacionCards(element,index){
 }
 
 
-for (let i = 0; i < 5; i++) {
-    var random1 = Math.floor(Math.random() * infoproducto.length);
-    var random2;
-    var arregloRandom = []
-    while(arregloRandom.length < infoproducto[random1].length ){
-        var random2 = Math.ceil(Math.random()* infoproducto[random1].length);
-        var existe = false;
-        for(var a=0;a<arregloRandom.length;a++){
-            if(arregloRandom[i] == random2){
-                existe = true;
-                break;
-            }
-        }
-        if(!existe){
-            arregloRandom[arregloRandom.length] = infoproducto[random1].length;
-        }
-
-    }
-    console.log("Random 1: "+random1+" Random 2: " + random2)
-    var arreglo = infoproducto[random1];
-    creacionCards(arreglo,random2);
-}
 
         
 
-
+if($("#mainIndex").val() =="1"){ //solo en el index generará 5 cards, en el resto generará 10
+    for (let i = 0; i < 5; i++) {
+        var random1 = Math.floor(Math.random() * infoproducto.length);
+        var random2;
+        var arregloRandom = []
+        while(arregloRandom.length < infoproducto[random1].length ){
+            var random2 = Math.ceil(Math.random()* infoproducto[random1].length);
+            var existe = false;
+            for(var a=0;a<arregloRandom.length;a++){
+                if(arregloRandom[i] == random2){
+                    existe = true;
+                    break;
+                }
+            }
+            if(!existe){
+                arregloRandom[arregloRandom.length] = infoproducto[random1].length;
+            }
+    
+        }
+        console.log("Random 1: "+random1+" Random 2: " + random2)
+        var arreglo = infoproducto[random1];
+        creacionCards(arreglo,random2);
+    }
+    
+}else{
+    for (let i = 0; i < 10; i++) {
+        var random1 = Math.floor(Math.random() * infoproducto.length);
+        var random2;
+        var arregloRandom = []
+        while(arregloRandom.length < infoproducto[random1].length ){
+            var random2 = Math.ceil(Math.random()* infoproducto[random1].length);
+            var existe = false;
+            for(var a=0;a<arregloRandom.length;a++){
+                if(arregloRandom[i] == random2){
+                    existe = true;
+                    break;
+                }
+            }
+            if(!existe){
+                arregloRandom[arregloRandom.length] = infoproducto[random1].length;
+            }
+    
+        }
+        console.log("Random 1: "+random1+" Random 2: " + random2)
+        var arreglo = infoproducto[random1];
+        creacionCards(arreglo,random2);
+    }
+}
 
 
