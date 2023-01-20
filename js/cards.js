@@ -1,13 +1,14 @@
-var infoProductos = [
+var infoproducto = [
+    [
     {
-        nombre: "producto 1",
+        nombre: "producto 1 - 0",
         imagen: "/src",
         codigo: 1234567890,
         descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
         precio: 00000
     },
     {
-        nombre: "producto 2",
+        nombre: "producto 2 - 0",
         imagen: "/src",
         codigo: 1234567890,
         descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
@@ -15,7 +16,7 @@ var infoProductos = [
 
     },
     {
-        nombre: "producto 3",
+        nombre: "producto 3 - 0",
         imagen: "/src",
         codigo: 1234567890,
         descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
@@ -23,7 +24,7 @@ var infoProductos = [
 
     },
     {
-        nombre: "producto 4",
+        nombre: "producto 4 - 0",
         imagen: "/src",
         codigo: 1234567890,
         descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
@@ -31,7 +32,7 @@ var infoProductos = [
 
     },
     {
-        nombre: "producto 5",
+        nombre: "producto 5 - 0",
         imagen: "/src",
         codigo: 1234567890,
         descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
@@ -39,7 +40,7 @@ var infoProductos = [
 
     },
     {
-        nombre: "producto 6",
+        nombre: "producto 6 - 0",
         imagen: "/src",
         codigo: 1234567890,
         descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
@@ -47,7 +48,7 @@ var infoProductos = [
 
     },
     {
-        nombre: "producto 7",
+        nombre: "producto 7 - 0",
         imagen: "/src",
         codigo: 1234567890,
         descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
@@ -55,7 +56,7 @@ var infoProductos = [
 
     },
     {
-        nombre: "producto 8",
+        nombre: "producto 8 - 0",
         imagen: "/src",
         codigo: 1234567890,
         descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
@@ -63,7 +64,7 @@ var infoProductos = [
 
     },
     {
-        nombre: "producto 9",
+        nombre: "producto 9 - 0",
         imagen: "/src",
         codigo: 1,
         descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
@@ -71,15 +72,177 @@ var infoProductos = [
 
     },
     {
-        nombre: "producto 10",
+        nombre: "producto 10 - 0",
         imagen: "/qweqweqew",
         codigo: 1234567,
         descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
         precio: 00000
 
-    }
-
+    }],
+    [
+        {
+            nombre: "producto 1 - 1",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+        },
+        {
+            nombre: "producto 2 - 1",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 3 - 1",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 4 - 1",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 5 - 1",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 6 - 1",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 7 - 1",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 8 - 1",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 9 - 1",
+            imagen: "/src",
+            codigo: 1,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 10 - 1",
+            imagen: "/qweqweqew",
+            codigo: 1234567,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        }
+    
+    ],
+    [
+        {
+            nombre: "producto 1 - 2",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+        },
+        {
+            nombre: "producto 2 - 2",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 3 - 2",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 4 - 2",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 5 - 2",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 6 - 2",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 7 - 2",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 8 - 2",
+            imagen: "/src",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 9 - 2",
+            imagen: "/src",
+            codigo: 1,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        },
+        {
+            nombre: "producto 10 - 2",
+            imagen: "/qweqweqew",
+            codigo: 1234567,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 00000
+    
+        }]
 ]
+
 
 var divExterno;
 var divMedio;
@@ -93,17 +256,18 @@ var imgCard;
 var selecCantidad;
 var labelCantidad;
 var i = 0;
+var index;
 
-//iterador creador de cards
-infoProductos.forEach(element => {
-  
+//Función creadora de cards
+function creacionCards(element,index){
     //Creación de elementos html y asignación de atributos
     divMedio = document.createElement("div");
-    divMedio.className = "card col-4 gy-3";
-    divMedio.style = "object-fit: fit; border: none; max-width: 250px; min-width: 200px "
+    divMedio.className = "card col-4 gy-3 divMedio";
+    divMedio.style = "object-fit: fit; border: none; max-width: 250px; min-width: 200px; background: #ff000000;";
 
     divInterno = document.createElement("div");
-    divInterno.className = "card-body card-img-overlay ";
+    divInterno.className = "card-body card-img-overlay divInterno";
+   
 
     imgCard = document.createElement("img");
     imgCard.className = "img-fluid card-img-top rounded-top"
@@ -113,14 +277,18 @@ infoProductos.forEach(element => {
 
     tituloCard = document.createElement("h5");
     tituloCard.className = "card-title";
-    tituloCard.textContent = "Titulo"
+    tituloCard.textContent = element[index].nombre;
 
     descripcionCard = document.createElement("p");
     descripcionCard.className = "card-text";
-    descripcionCard.textContent = element.descripcion;
+    descripcionCard.textContent = element[index].descripcion;
+    descripcionCard.id = "descripcion-"+i;
+    descripcionCard.style = "padding: 10%;";
+    
+
 
     footerCard = document.createElement("div");
-    footerCard.className = "card rounded-bottom pb-3";
+    footerCard.className = "card  pb-3";
     
     divAgregar = document.createElement("div");
     divAgregar.style = "display: flex; justify-content: space-evenly";
@@ -162,4 +330,34 @@ infoProductos.forEach(element => {
     footerCard.append(divCantidad);
     footerCard.append(divAgregar);
     i++;
-});
+}
+
+
+for (let i = 0; i < 5; i++) {
+    var random1 = Math.floor(Math.random() * infoproducto.length);
+    var random2;
+    var arregloRandom = []
+    while(arregloRandom.length < infoproducto[random1].length ){
+        var random2 = Math.ceil(Math.random()* infoproducto[random1].length);
+        var existe = false;
+        for(var a=0;a<arregloRandom.length;a++){
+            if(arregloRandom[i] == random2){
+                existe = true;
+                break;
+            }
+        }
+        if(!existe){
+            arregloRandom[arregloRandom.length] = infoproducto[random1].length;
+        }
+
+    }
+    console.log("Random 1: "+random1+" Random 2: " + random2)
+    var arreglo = infoproducto[random1];
+    creacionCards(arreglo,random2);
+}
+
+        
+
+
+
+
