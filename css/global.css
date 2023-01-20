@@ -1,3 +1,5 @@
+/* MEDIAQUERY */
+
 /* BARRA DE NAVEGACION */
 .navbar-collapse {
     display: flex;
@@ -19,10 +21,10 @@
     gap: 1rem;
 }
 .nav-icono-login {
-    height: 3rem;
+    height: 2rem;
 }
 .nav-icono-carrito {
-    height: 2.4rem;
+    height: 2rem;
 }
 .nav-icono-buscador {
     height: 2rem;
@@ -33,7 +35,10 @@
     gap: 1rem;
 }
 .navbar-left {
-    font-size: 1.2rem;
+    font-size: .8em;
+}
+.navbar-right {
+    font-size: 1rem;
 }
 .buscadornav {
     padding-left: 1rem;
@@ -46,7 +51,6 @@ body{
     background: -moz-linear-gradient(-45deg, #8EA3AD 0%, #B2D5E0 52%, #198DA1 100%);
     background: -webkit-linear-gradient(-45deg, #8EA3AD 0%, #B2D5E0 52%, #198DA1 100%);
     background: linear-gradient(135deg, #8EA3AD 0%, #B2D5E0 52%, #198DA1 100%);
-    height: auto;
 }    
 
 /*footer*/
