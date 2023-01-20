@@ -5,19 +5,13 @@ var infoproducto = [
             nombre: "Zapatillas Blaze Court",
             imagen: "/img/calzado/blaze-court.png",
             codigo: 1234567890,
-<<<<<<< HEAD
             descripcion: "zapatilla de basquetball unisex",
             precio: 00000
-=======
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
->>>>>>> 172252ee2869246badf9e384b3f0f8545a187d7a
         },
         {
             nombre: "Zapatilla Deviaten Nitro",
             imagen: "/img/calzado/deviaten-nitro.png",
             codigo: 1234567890,
-<<<<<<< HEAD
             descripcion: "zapatilla running mujer color verde",
             precio: 00000
 
@@ -80,83 +74,14 @@ var infoproducto = [
         },
         {
             nombre: "Zapatillas Voyage Nitro",
-            imagen: "/img.calzado/voyage-nitro.png",
+            imagen: "/img/calzado/voyage-nitro.png",
             codigo: 1234567890,
             descripcion: "zapatillas running hombre color negro",
             precio: 00000
-=======
-            descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
-
-        },
-        {
-            nombre: "producto 3 - 0",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
-
-        },
-        {
-            nombre: "producto 4 - 0",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
-
-        },
-        {
-            nombre: "producto 5 - 0",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
-
-        },
-        {
-            nombre: "producto 6 - 0",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
-
-        },
-        {
-            nombre: "producto 7 - 0",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
-
-        },
-        {
-            nombre: "producto 8 - 0",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
-
-        },
-        {
-            nombre: "producto 9 - 0",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
-
-        },
-        {
-            nombre: "producto 10 - 0",
-            imagen: "/qweqweqew",
-            codigo: 1234567,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
->>>>>>> 172252ee2869246badf9e384b3f0f8545a187d7a
 
     }],
     [
         {
-<<<<<<< HEAD
             nombre: "Camiseta Seleccion Argentina",
             imagen: "/img/camisetas/argentina.png",
             codigo: 1234567890,
@@ -229,89 +154,10 @@ var infoproducto = [
         },
         {
             nombre: "Camiseta Running",
-            imagen: "/img/camisetas/runningmc/jfif",
+            imagen: "/img/camisetas/runningmc.jfif",
             codigo: 1234567890,
             descripcion: "Camiseta running mujer manga corta diseno team colores ",
             precio: 00000
-=======
-            nombre: "producto 1 - 1",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
-        },
-        {
-            nombre: "producto 2 - 1",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1234567890,
-            descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 113.4512
-
-        },
-        {
-            nombre: "producto 3 - 1",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
-
-        },
-        {
-            nombre: "producto 4 - 1",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45,
-            
-
-        },
-        {
-            nombre: "producto 5 - 1",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.23
-
-        },
-        {
-            nombre: "producto 6 - 1",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
-
-        },
-        {
-            nombre: "producto 7 - 1",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
-
-        },
-        {
-            nombre: "producto 8 - 1",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
-
-        },
-        {
-            nombre: "producto 9 - 1",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 1,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
-
-        },
-        {
-            nombre: "producto 10 - 1",
-            imagen: "/qweqweqew",
-            codigo: 1234567,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 13.45
->>>>>>> 172252ee2869246badf9e384b3f0f8545a187d7a
 
         }
     
