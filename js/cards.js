@@ -2,161 +2,161 @@ var infoproducto = [
     
     [
         {
-            nombre: "producto 1 - 0",
-            imagen: "/img/poleras/Jordan-Flight.png",
+            nombre: "Zapatillas Blaze Court",
+            imagen: "/img/calzado/blaze-court.png",
             codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "zapatilla de basquetball unisex",
             precio: 00000
         },
         {
-            nombre: "producto 2 - 0",
-            imagen: "/img/poleras/Jordan-Flight2.png",
+            nombre: "Zapatilla Deviaten Nitro",
+            imagen: "/img/calzado/deviaten-nitro.png",
             codigo: 1234567890,
-            descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "zapatilla running mujer color verde",
             precio: 00000
 
         },
         {
-            nombre: "producto 3 - 0",
-            imagen: "/src",
+            nombre: "Zapatilla Florence",
+            imagen: "/img/calzado/florence.png",
             codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "zapatillas urbanas mujer",
             precio: 00000
 
         },
         {
-            nombre: "producto 4 - 0",
-            imagen: "/src",
+            nombre: "Zapatillas Magnify Nitro",
+            imagen: "/img/calzado/magnify-nitro.png",
             codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "zapatillas running hombre color rojo",
             precio: 00000
 
         },
         {
-            nombre: "producto 5 - 0",
-            imagen: "/src",
+            nombre: "Zapatilla Mercurial Victory",
+            imagen: "/img/calzado/mercurial-victory.png",
             codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "zapatillas baby futbol unisex",
             precio: 00000
 
         },
         {
-            nombre: "producto 6 - 0",
-            imagen: "/src",
+            nombre: "Zapatos Mercury",
+            imagen: "/img/calzado/mercury.jfif",
             codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "Zapatos de futbol mujer color dorado ",
             precio: 00000
 
         },
         {
-            nombre: "producto 7 - 0",
-            imagen: "/src",
+            nombre: "Zapatillas Slip Stream",
+            imagen: "/img/calzado/slipstream.png",
             codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "zapatilla urbana de caña alta unisex ",
             precio: 00000
 
         },
         {
-            nombre: "producto 8 - 0",
-            imagen: "/src",
+            nombre: "Zapatilla Suede Classic XXI",
+            imagen: "/img/calzado/suede-classicxxi.png",
             codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "Zapatilla urbana mujer color rosado",
             precio: 00000
 
         },
         {
-            nombre: "producto 9 - 0",
-            imagen: "/src",
-            codigo: 1,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            nombre: "Zapatos Superfly",
+            imagen: "/img/calzado/superfly.jfif",
+            codigo: 1234567890,
+            descripcion: "Zapato de futbol hombre color rojo",
             precio: 00000
 
         },
         {
-            nombre: "producto 10 - 0",
-            imagen: "/qweqweqew",
-            codigo: 1234567,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            nombre: "Zapatillas Voyage Nitro",
+            imagen: "/img.calzado/voyage-nitro.png",
+            codigo: 1234567890,
+            descripcion: "zapatillas running hombre color negro",
             precio: 00000
 
     }],
     [
         {
-            nombre: "producto 1 - 1",
-            imagen: "/src",
+            nombre: "Camiseta Seleccion Argentina",
+            imagen: "/img/camisetas/argentina.png",
             codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "Camiseta oficial seleccion Argentina 3 estrellas",
             precio: 00000
         },
         {
-            nombre: "producto 2 - 1",
-            imagen: "/src",
+            nombre: "Camiseta Barcelona",
+            imagen: "/img/camisetas/barca.jfif",
             codigo: 1234567890,
-            descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "Camiseta Barcelona 22-23 Oficial",
             precio: 00000
 
         },
         {
-            nombre: "producto 3 - 1",
-            imagen: "/src",
+            nombre: "Camiseta Boca Juniors",
+            imagen: "/img/camisetas/boca.jfif",
             codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "Nueva camiseta de Boca oficial y de visitante",
             precio: 00000
 
         },
         {
-            nombre: "producto 4 - 1",
-            imagen: "/src",
+            nombre: "Camiseta seleccion chilena",
+            imagen: "/img/camisetas/chile.jfif",
             codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "Camiseta seleccion chilena local  22-23 oficial",
             precio: 00000
 
         },
         {
-            nombre: "producto 5 - 1",
-            imagen: "/src",
+            nombre: "Camiseta Jordan Flight",
+            imagen: "/img/camisetas/jordan-flight.png",
             codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "Camiseta diseno zapatillas Jordan color negra",
             precio: 00000
 
         },
         {
-            nombre: "producto 6 - 1",
-            imagen: "/src",
+            nombre: "Camiseta Jordan",
+            imagen: "/img/camisetas/jordan3.png",
             codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "Camiseta diseno Jordan color negra",
             precio: 00000
 
         },
         {
-            nombre: "producto 7 - 1",
-            imagen: "/src",
+            nombre: "Camiseta Jordan Flight",
+            imagen: "/img/camisetas/jordan-flight.png",
             codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "Camiseta Jordan Flight mujer diseno espalda color roja",
             precio: 00000
 
         },
         {
-            nombre: "producto 8 - 1",
-            imagen: "/src",
+            nombre: "Camiseta Lebron",
+            imagen: "/img/camisetas/lebron.png",
             codigo: 1234567890,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            descripcion: "Camiseta basquetball oficial Lebron",
             precio: 00000
 
         },
         {
-            nombre: "producto 9 - 1",
-            imagen: "/src",
-            codigo: 1,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            nombre: "Camiseta PSG",
+            imagen: "/img/camisetas/psg.jfif",
+            codigo: 1234567890,
+            descripcion: "Camiseta primera equipacion PSG 22-23 oficial",
             precio: 00000
 
         },
         {
-            nombre: "producto 10 - 1",
-            imagen: "/qweqweqew",
-            codigo: 1234567,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            nombre: "Camiseta Running",
+            imagen: "/img/camisetas/runningmc/jfif",
+            codigo: 1234567890,
+            descripcion: "Camiseta running mujer manga corta diseno team colores ",
             precio: 00000
 
         }
