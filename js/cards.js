@@ -5,13 +5,19 @@ var infoproducto = [
             nombre: "Zapatillas Blaze Court",
             imagen: "/img/calzado/blaze-court.png",
             codigo: 1234567890,
+<<<<<<< HEAD
             descripcion: "zapatilla de basquetball unisex",
             precio: 00000
+=======
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+>>>>>>> 172252ee2869246badf9e384b3f0f8545a187d7a
         },
         {
             nombre: "Zapatilla Deviaten Nitro",
             imagen: "/img/calzado/deviaten-nitro.png",
             codigo: 1234567890,
+<<<<<<< HEAD
             descripcion: "zapatilla running mujer color verde",
             precio: 00000
 
@@ -78,10 +84,79 @@ var infoproducto = [
             codigo: 1234567890,
             descripcion: "zapatillas running hombre color negro",
             precio: 00000
+=======
+            descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+
+        },
+        {
+            nombre: "producto 3 - 0",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+
+        },
+        {
+            nombre: "producto 4 - 0",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+
+        },
+        {
+            nombre: "producto 5 - 0",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+
+        },
+        {
+            nombre: "producto 6 - 0",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+
+        },
+        {
+            nombre: "producto 7 - 0",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+
+        },
+        {
+            nombre: "producto 8 - 0",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+
+        },
+        {
+            nombre: "producto 9 - 0",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+
+        },
+        {
+            nombre: "producto 10 - 0",
+            imagen: "/qweqweqew",
+            codigo: 1234567,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+>>>>>>> 172252ee2869246badf9e384b3f0f8545a187d7a
 
     }],
     [
         {
+<<<<<<< HEAD
             nombre: "Camiseta Seleccion Argentina",
             imagen: "/img/camisetas/argentina.png",
             codigo: 1234567890,
@@ -158,6 +233,85 @@ var infoproducto = [
             codigo: 1234567890,
             descripcion: "Camiseta running mujer manga corta diseno team colores ",
             precio: 00000
+=======
+            nombre: "producto 1 - 1",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+        },
+        {
+            nombre: "producto 2 - 1",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1234567890,
+            descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 113.4512
+
+        },
+        {
+            nombre: "producto 3 - 1",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+
+        },
+        {
+            nombre: "producto 4 - 1",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45,
+            
+
+        },
+        {
+            nombre: "producto 5 - 1",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.23
+
+        },
+        {
+            nombre: "producto 6 - 1",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+
+        },
+        {
+            nombre: "producto 7 - 1",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+
+        },
+        {
+            nombre: "producto 8 - 1",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1234567890,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+
+        },
+        {
+            nombre: "producto 9 - 1",
+            imagen: "/img/poleras/Jordan-Flight.png",
+            codigo: 1,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+
+        },
+        {
+            nombre: "producto 10 - 1",
+            imagen: "/qweqweqew",
+            codigo: 1234567,
+            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
+            precio: 13.45
+>>>>>>> 172252ee2869246badf9e384b3f0f8545a187d7a
 
         }
     
@@ -165,73 +319,73 @@ var infoproducto = [
     [
         {
             nombre: "producto 1 - 2",
-            imagen: "/src",
+            imagen: "/img/poleras/Jordan-Flight.png",
             codigo: 1234567890,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 00000
+            precio: 13.45
         },
         {
             nombre: "producto 2 - 2",
-            imagen: "/src",
+            imagen: "/img/poleras/Jordan-Flight.png",
             codigo: 1234567890,
             descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 00000
+            precio: 13.45
     
         },
         {
             nombre: "producto 3 - 2",
-            imagen: "/src",
+            imagen: "/img/poleras/Jordan-Flight.png",
             codigo: 1234567890,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 00000
+            precio: 13.45
     
         },
         {
             nombre: "producto 4 - 2",
-            imagen: "/src",
+            imagen: "/img/poleras/Jordan-Flight.png",
             codigo: 1234567890,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 00000
+            precio: 13.45
     
         },
         {
             nombre: "producto 5 - 2",
-            imagen: "/src",
+            imagen: "/img/poleras/Jordan-Flight.png",
             codigo: 1234567890,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 00000
+            precio: 13.45
     
         },
         {
             nombre: "producto 6 - 2",
-            imagen: "/src",
+            imagen: "/img/poleras/Jordan-Flight.png",
             codigo: 1234567890,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 00000
+            precio: 13.45
     
         },
         {
             nombre: "producto 7 - 2",
-            imagen: "/src",
+            imagen: "/img/poleras/Jordan-Flight.png",
             codigo: 1234567890,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 00000
+            precio: 13.45
     
         },
         {
             nombre: "producto 8 - 2",
-            imagen: "/src",
+            imagen: "/img/poleras/Jordan-Flight.png",
             codigo: 1234567890,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 00000
+            precio: 13.45
     
         },
         {
             nombre: "producto 9 - 2",
-            imagen: "/src",
+            imagen: "/img/poleras/Jordan-Flight.png",
             codigo: 1,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 00000
+            precio: 13.45
     
         },
         {
@@ -239,7 +393,7 @@ var infoproducto = [
             imagen: "/qweqweqew",
             codigo: 1234567,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 00000
+            precio: 13.45
     
         }]
 ]
@@ -252,31 +406,33 @@ var footerCard;
 var tituloCard;
 var descripcionCard;
 var labelcheck;
-var checkbox;
+var boton;
 var imgCard;
 var selecCantidad;
 var labelCantidad;
 var i = 0;
 var index;
 var precio;
+var linkImagen;
 
 //Función creadora de cards
 function creacionCards(element,index){
     //Creación de elementos html y asignación de atributos
     divMedio = document.createElement("div");
-    divMedio.className = "card col-4 gy-3 divMedio";
-    divMedio.style = "object-fit: fit; border: none; max-width: 250px; min-width: 200px; background: #ff000000;";
+    divMedio.className = "card col-4 gy-3 ";
+    divMedio.style = "object-fit: fit; border: none; max-width: 250px; min-width: 200px; background: rgba(0,0,0,0);";
 
     divInterno = document.createElement("div");
     divInterno.className = "card-body card-img-overlay divInterno";
-   
-
+    divInterno.setAttribute("data-bs-toggle","modal");
+    divInterno.setAttribute("data-bs-target", "#detalleProducto") ;
+    
     imgCard = document.createElement("img");
     imgCard.className = "img-fluid card-img-top rounded-top"
-    imgCard.src = "/img/imgcard.jpg";
+    imgCard.src= element[index].imagen;
     imgCard.alt  = "Imagen no Disponible"
-    imgCard.style = "max-height: 300px; object-fit: fit"
-
+    imgCard.style = "max-height: 300px; object-fit: fit",
+    
     tituloCard = document.createElement("h5");
     tituloCard.className = "card-title";
     tituloCard.textContent = element[index].nombre;
@@ -290,8 +446,8 @@ function creacionCards(element,index){
 
     precio = document.createElement("h2");
     precio.className = "card-text";
-    precio.textContent = "$" + element[index].precio;
-    
+    precio.textContent = new Intl.NumberFormat('en-US', {currency: 'USD', style: 'currency'}).format(element[index].precio);
+    precio.id = "precio-" + i;
 
 
     footerCard = document.createElement("div");
@@ -304,14 +460,14 @@ function creacionCards(element,index){
     divCantidad = document.createElement("div");
     divCantidad.style = "display: flex; justify-content: space-evenly";
 
-    checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.id = "checkbox-" + i;
+    boton = document.createElement("button");
+    boton.type = "button";
+    boton.id = "boton-" + i;
+    boton.className = "btn bg-primary";
+    boton.textContent = "Añadir al Carro";
 
-    labelcheck = document.createElement("label");
-    labelcheck.for = "checkbox-" + i;
-    labelcheck.textContent = "Añadir al Carro";
-
+    
+    
     selecCantidad = document.createElement("input");
     selecCantidad.id = "cantidad"
     selecCantidad.type = "number";
@@ -326,23 +482,20 @@ function creacionCards(element,index){
     //Anidar y agregar los elementos al DOM
     $("#contenedorCard").append(divMedio);
     divMedio.append(divInterno);
-    divMedio.append(imgCard)
-    divMedio.append(footerCard)
-    divInterno.append(tituloCard);
-    divInterno.append(descripcionCard);
-    divInterno.append(precio)
-    divAgregar.append(labelcheck)
-    divAgregar.append(checkbox)
+    divMedio.append(imgCard);
+    divMedio.append(footerCard);
+    footerCard.append(tituloCard);
+    footerCard.append(precio)
+    divAgregar.append(boton)
     divCantidad.append(labelCantidad);
     divCantidad.append(selecCantidad);
     footerCard.append(divCantidad);
     footerCard.append(divAgregar);
+
+    
     i++;
 }
 
-
-
-        
 
 if($("#mainIndex").val() =="1"){ //solo en el index generará 5 cards, en el resto generará 10
     for (let i = 0; i < 5; i++) {
@@ -365,6 +518,9 @@ if($("#mainIndex").val() =="1"){ //solo en el index generará 5 cards, en el res
         }
         var arreglo = infoproducto[random1];
         creacionCards(arreglo,random2);
+        
+        
+        
     }
     
 }else{
