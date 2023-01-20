@@ -3,14 +3,14 @@ var infoproducto = [
     [
         {
             nombre: "producto 1 - 0",
-            imagen: "/src",
+            imagen: "/img/poleras/Jordan-Flight.png",
             codigo: 1234567890,
             descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
             precio: 00000
         },
         {
             nombre: "producto 2 - 0",
-            imagen: "/src",
+            imagen: "/img/poleras/Jordan-Flight2.png",
             codigo: 1234567890,
             descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
             precio: 00000
