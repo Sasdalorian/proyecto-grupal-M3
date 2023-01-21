@@ -17,3 +17,4 @@ function creacionCarro(){
 
     $("#contenidoCarro").append(contenedor)
 }
+
