@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css">
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/cadrsIndex.css">
 
         <title>Deportes JS</title>
     </head>
@@ -55,7 +56,7 @@
                         <li class="nav-item">
                           <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                           <a class="nav-link" href="#">Nosotros</a>
                         </li>
                         <li class="nav-item">
@@ -84,14 +85,14 @@
         <br><br>
         
         <main >
-            
+            <!-- -->
             <div class="row mt-5 carousel" id="contenedorCard" style="justify-content: center"></div>
 
             <div class="modal fade" id="carro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Título del modal</h5>
+                      <h5 class="modal-title" >Título del modal</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body" id="contenidoCarro">
@@ -106,14 +107,21 @@
               </div>
 
               <div class="modal fade" id="detalleProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-                <div class="modal-dialog" >
-                  <div class="modal-content">
+                <div class="modal-dialog"  >
+                  <div class="modal-content" >
                     <div class="modal-header">
-                      <h5 class="modal-title" id="titulo"></h5>
+                      <h5 class="modal-title" id="tituloModal"></h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body" id="cuerpoDescripcion">
-                      
+                    <div class="modal-body row" id="cuerpoDescripcion">
+                      <img src="" alt="Imagen no Disponible" id="imagenModal" class="col-6">
+                      <div class="col-6">
+                        <div id="descripcionModal"></div>
+                        <div id="codigoModal" class="mt-1"></div>
+                        <h4 id="precioModal" class="mt-1"></h4>
+                        <label for="cantidadModal">Cantidad:</label>
+                        <input type="number" id="cantidadModal" min="1" max="15" value="1">
+                      </div>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>

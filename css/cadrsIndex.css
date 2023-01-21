@@ -1,4 +1,9 @@
 #contenedorCards{
     display: grid;
     grid-template-columns: repeat(auto-fill, 9em);
+   
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
 }
