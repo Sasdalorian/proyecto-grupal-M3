@@ -373,7 +373,7 @@ if($("#mainIndex").val() =="1"){ //solo en el index generará 5 cards, en el res
     for (let i = 0; i < 4; i++) {
         var random1 = Math.floor(Math.random() * infoproducto.length);
         var random2;
-        var arregloRandom = []
+        var arregloRandom = [];
         while(arregloRandom.length < infoproducto[random1].length ){
             var random2 = Math.ceil(Math.random()* infoproducto[random1].length);
             var existe = false;
@@ -391,11 +391,9 @@ if($("#mainIndex").val() =="1"){ //solo en el index generará 5 cards, en el res
         var arreglo = infoproducto[random1];
 
         creacionCards(arreglo,random2);
-        
-        
-        
+        arregloRandom = []
     }
-    
+   
 }else{
     for (let i = 0; i < 10; i++) {
         var random1 = Math.floor(Math.random() * infoproducto.length);
