@@ -1,6 +1,8 @@
 
-
-var infoproducto = [
+//infoProducto[0] = poleras
+//infoProducto[1] = polerones
+//infoProducto[2] = zapatillas
+var infoProducto = [
     
     [
         {
@@ -92,7 +94,7 @@ var infoproducto = [
         },
         {
             nombre: "POLERON ONE PIECE TRUE BLUE",
-            imagen: "/img/polerones/POLERA-ONE PIECE-LS-TRUE-BLUE.pngPOLERA-ONE PIECE-LS-TRUE-BLUE.png",
+            imagen: "/img/polerones/POLERA-ONE PIECE-LS-TRUE-BLUE.png",
             codigo: 7543214142883,
             descripcion: "Rindamos homenaje al poder de la amistad Acompaña a Monkey D. Luffy y a su tripulación pirata en su búsqueda del tesoro supremo, el One Piece, con esta colección exclusiva de Vans x One Piece..",
             precio: 39990
@@ -167,82 +169,82 @@ var infoproducto = [
     ],
     [
         {
-            nombre: "producto 1 - 2",
-            imagen: "/img/polerones/POLERA-ONE PIECE-LS-TRUE-BLUE.png",
+            nombre: "ZAPATILLAS TRC BLAZE COURT",
+            imagen: "/img/zapatillas/ZAPATILLAS DE BASKETBALL TRC BLAZE COURT.png",
             codigo: 7543214956671,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 9887
+            descripcion: "Estas zapatillas se inspiran en las Blaze of Glory y se encargan de que todo esté fresco dentro y fuera del campo de juego. Equipadas con la triple amenaza Trinomic de amortiguación, flexibilidad y estabilidad, estas zapatillas tienen un diseño de caña baja, pero con una gran devolución de la energía.",
+            precio: 89990
         },
         {
-            nombre: "producto 2 - 2",
-            imagen: "/img/polerones/POLERA-ONE PIECE-LS-TRUE-BLUE.png",
+            nombre: "ZAPATILLAS SLIPSTREAM",
+            imagen: "/img/zapatillas/ZAPATILLAS DE CAÑA MEDIA SLIPSTREAM SC.png",
             codigo: 7543214830377,
-            descripcion: " Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 9887
+            descripcion: "Las Slipstream son un verdadero ícono del calzado, con un legado que se remonta a 1987. Si bien se pensaron como una zapatilla de basketball prémium, los creadores de tendencia no tardaron en reconocer que su comodidad y resistencia eran perfectas para las calles.",
+            precio: 119990
     
         },
         {
-            nombre: "producto 3 - 2",
-            imagen: "/img/polerones/POLERA-ONE PIECE-LS-TRUE-BLUE.png",
+            nombre: "ZAPATILLAS DEVIATE NITRO",
+            imagen: "/img/zapatillas/ZAPATILLAS DE RUNNING PARA HOMBRE DEVIATE NITRO.png",
             codigo: 7543214906186,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 9887
+            descripcion: "Excelente performance en la distancia que sea. Las DEVIATE NITRO tienen un diseño amortiguado que viene a innovar en la tendencia de las zapatillas de running de máximo performance para que correr más rápido sea cada vez más fácil.",
+            precio: 129990
     
         },
         {
-            nombre: "producto 4 - 2",
-            imagen: "/img/polerones/POLERA-ONE PIECE-LS-TRUE-BLUE.png",
+            nombre: "ZAPATILLAS MAGNIFY NITRO",
+            imagen: "/img/zapatillas/ZAPATILLAS DE RUNNING PARA HOMBRE MAGNIFY NITRO.png",
             codigo: 7543214564112,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 9887
+            descripcion: "Dicho de forma sencilla, estas zapatillas te siguen ofreciendo lo mejor. Para empezar, tienen una mediasuela con NITRO FOAM, la tecnología avanzada de PUMA diseñada para ofrecer una adaptación y una amortiguación increíbles.",
+            precio: 109990
     
         },
         {
-            nombre: "producto 5 - 2",
-            imagen: "/img/polerones/POLERA-ONE PIECE-LS-TRUE-BLUE.png",
+            nombre: "ZAPATILLAS VOYAGE NITRO",
+            imagen: "/img/zapatillas/ZAPATILLAS DE RUNNING PARA MUJER VOYAGE NITRO.png",
             codigo: 7543214519667,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 9887
+            descripcion: "Dicho de forma sencilla, estas zapatillas te siguen ofreciendo lo mejor. Para empezar, tienen una mediasuela con NITRO FOAM, la tecnología avanzada de PUMA diseñada para ofrecer una adaptación y una amortiguación increíbles.",
+            precio: 109990
     
         },
         {
-            nombre: "producto 6 - 2",
-            imagen: "/img/polerones/POLERA-ONE PIECE-LS-TRUE-BLUE.png",
+            nombre: "ZAPATILLAS SK8-HI ONE PIECE",
+            imagen: "/img/zapatillas/ZAPATILLAS SK8-HI ONE PIECE PUNK HAZARD MULTI.png",
             codigo: 7543214621041,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 9887
+            descripcion: "Rindamos homenaje al poder de la amistad Acompaña a Monkey D. Luffy y a su tripulación pirata en su búsqueda del tesoro supremo, el One Piece, con esta colección exclusiva de Vans x One Piece.",
+            precio: 94990
     
         },
         {
-            nombre: "producto 7 - 2",
-            imagen: "/img/polerones/POLERA-ONE PIECE-LS-TRUE-BLUE.png",
+            nombre: "ZAPATILLAS SUEDE CLASSIC XXI",
+            imagen: "/img/zapatillas/ZAPATILLAS SUEDE CLASSIC XXI.png",
             codigo: 7543214874446,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 9887
+            descripcion: "Con un gran impacto en la cultura del calzado, las zapatillas más icónicas de PUMA entraron a la escena por primera vez en 1968 y han sido usadas desde entonces por los íconos de cada generación. Las Suede Classic XXI cuentan con un empeine completo de gamuza y toques modernos, que mejoran la calidad general y hacen que se sientan mejor que nunca.",
+            precio: 69990
     
         },
         {
-            nombre: "producto 8 - 2",
-            imagen: "/img/polerones/POLERA-ONE PIECE-LS-TRUE-BLUE.png",
+            nombre: "ZAPATILLAS ONE PIECE COOKIE",
+            imagen: "/img/zapatillas/ZAPATILLAS UA AUTHENTIC 44 DX ONE PIECE COOKIE.png",
             codigo: 7543214875716,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 9887
+            descripcion: "Las zapatillas Authentic Vans x One Piece combinan una estética náutica inspirada en el emblemático manga japonés con unas palas de yute bordadas con divertidos símbolos de One Piece en honor a los inconfundibles sombreros de paja de la serie.",
+            precio: 99990
     
         },
         {
-            nombre: "producto 9 - 2",
-            imagen: "/img/polerones/POLERA-ONE PIECE-LS-TRUE-BLUE.png",
+            nombre: "ZAPATILLAS ONE PIECE HAT CREW",
+            imagen: "/img/zapatillas/ZAPATILLAS UA AUTHENTIC ONE PIECE STRAW HAT CREW.png",
             codigo: 7543214103528,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 9887
+            descripcion: "Las zapatillas Authentic Vans x One Piece combinan una estética náutica inspirada en el emblemático manga japonés con unas palas de yute bordadas con divertidos símbolos de One Piece en honor a los inconfundibles sombreros de paja de la serie.",
+            precio: 59990
     
         },
         {
-            nombre: "producto 10 - 2",
-            imagen: "/img/polerones/POLERA-ONE PIECE-LS-TRUE-BLUE.png",
+            nombre: "ZAPATILLAS NATHAN FLORENCE",
+            imagen: "/img/zapatillas/ZAPATILLAS UA ULTRARANGE VR3 NATHAN FLORENCE.png",
             codigo: 7543214254000,
-            descripcion: "Exercitationem corrupti molestiae consequuntur hic praesentium non dignissimos repellendus maiores sed ea.",
-            precio: 9887
+            descripcion: "Procedente de la costa norte de Oahu, Nathan Florence creció con algunas de las olas más emblemáticas del mundo justo delante de su puerta. Ese entorno único no solo convirtió a Nathan en el surfista que actualmente es, sino que encendió en él la llama que le permitió continuar buscando lugares de surf desafiantes.",
+            precio: 109990
     
         }]
 ]
@@ -302,6 +304,7 @@ function creacionCards(element,index){
     tituloCard = document.createElement("h4");
     tituloCard.className = "card-title ps-2";
     tituloCard.textContent = element[index].nombre;
+    tituloCard.style = " margin-top: auto;height: 60px";
     
     objeto.nombre = element[index].nombre; 
 
@@ -312,23 +315,26 @@ function creacionCards(element,index){
     precio.textContent = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(element[index].precio);
     precio.id = "precio-" + i;
     objeto.precio = element[index].precio;
+    precio.style = " margin-top: auto;";
 
     codigo = document.createElement("p");
     codigo.className = "card-text ps-2";
     codigo.textContent = "COD: " + element[index].codigo;
     codigo.id = "codigo-" + i;
     objeto.codigo = element[index].codigo;
+    codigo.style = " margin-top: auto;";
 
     footerCard = document.createElement("div");
     footerCard.className = "card   footerCard";
+    footerCard.style = "display: flex; justify-content: center; margin-top: auto;";
     
     divAgregar = document.createElement("div");
-    divAgregar.style = "display: flex; justify-content: space-around";
+    divAgregar.style = "display: flex; justify-content: center; margin-top: auto;";
     divAgregar.className = "p-2";
 
     divCantidad = document.createElement("div");
     divCantidad.className = "ps-2";
-    divCantidad.style = "justify-content: space-evenly; display: flex;"
+    divCantidad.style = "justify-content: space-evenly; display: flex; margin-top: auto;"
 
     boton = document.createElement("button");
     boton.type = "button";
@@ -371,11 +377,11 @@ function creacionCards(element,index){
 
 if($("#mainIndex").val() =="1"){ //solo en el index generará 5 cards, en el resto generará 10
     for (let i = 0; i < 4; i++) {
-        var random1 = Math.floor(Math.random() * infoproducto.length);
+        var random1 = Math.floor(Math.random() * infoProducto.length);
         var random2;
         var arregloRandom = [];
-        while(arregloRandom.length < infoproducto[random1].length ){
-            var random2 = Math.ceil(Math.random()* infoproducto[random1].length);
+        while(arregloRandom.length < infoProducto[random1].length ){
+            var random2 = Math.ceil(Math.random()* infoProducto[random1].length);
             var existe = false;
             for(var a=0;a<arregloRandom.length;a++){
                 if(arregloRandom[i] == random2){
@@ -384,11 +390,11 @@ if($("#mainIndex").val() =="1"){ //solo en el index generará 5 cards, en el res
                 }
             }
             if(!existe){
-                arregloRandom[arregloRandom.length] = infoproducto[random1].length;
+                arregloRandom[arregloRandom.length] = infoProducto[random1].length;
             }
     
         }
-        var arreglo = infoproducto[random1];
+        var arreglo = infoProducto[random1];
 
         creacionCards(arreglo,random2);
         arregloRandom = []
@@ -396,11 +402,11 @@ if($("#mainIndex").val() =="1"){ //solo en el index generará 5 cards, en el res
    
 }else{
     for (let i = 0; i < 10; i++) {
-        var random1 = Math.floor(Math.random() * infoproducto.length);
+        var random1 = Math.floor(Math.random() * infoProducto.length);
         var random2;
         var arregloRandom = []
-        while(arregloRandom.length < infoproducto[random1].length ){ 
-            var random2 = Math.ceil(Math.random()* infoproducto[random1].length);
+        while(arregloRandom.length < infoProducto[random1].length ){ 
+            var random2 = Math.ceil(Math.random()* infoProducto[random1].length);
             var existe = false;
             for(var a=0;a<arregloRandom.length;a++){
                 if(arregloRandom[i] == random2){
@@ -409,12 +415,12 @@ if($("#mainIndex").val() =="1"){ //solo en el index generará 5 cards, en el res
                 }
             }
             if(!existe){
-                arregloRandom[arregloRandom.length] = infoproducto[random1].length;
+                arregloRandom[arregloRandom.length] = infoProducto[random1].length;
             }
     
         }
        
-        var arreglo = infoproducto[random1];
+        var arreglo = infoProducto[random1];
         creacionCards(arreglo,random2);
     }
 }
