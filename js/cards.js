@@ -7,7 +7,7 @@ var infoProducto = [
     [
         {
             nombre: "JORDAN FLIGHT",
-            imagen: "/img/polerones/POLERA-ONE PIECE-LS-TRUE-BLUE.png",
+            imagen: "/img/poleras/Jordan-Flight.png",
             codigo: 7543214123617,
             descripcion: "Representa la historia de los 6 anillos dondequiera que vayas con esta playera con gráfico. El legendario bling de MJ está serigrafiado sobre un algodón suave y relajado que querrás usar todos los días.",
             precio: 36990
@@ -87,7 +87,7 @@ var infoProducto = [
     [
         {
             nombre: "POLERON DEPORTIVO NIKE AIR",
-            imagen: "/img/polerones/POLERA-ONE PIECE-LS-TRUE-BLUE.pngNike-Air.png",
+            imagen: "/img/polerones/Nike-Air.png",
             codigo: 754321468779,
             descripcion: "La silueta llamativa presenta un tejido de punto suave, cisas anchas y tecnología antitranspirante para que pueda usar su estilo en cualquier momento y en cualquier lugar. Look moderno..",
             precio: 29990
@@ -304,7 +304,7 @@ function creacionCards(element,index){
     tituloCard = document.createElement("h4");
     tituloCard.className = "card-title ps-2";
     tituloCard.textContent = element[index].nombre;
-    tituloCard.style = " margin-top: auto;height: 60px";
+    tituloCard.style = " margin-top: auto;height: 70px";
     
     objeto.nombre = element[index].nombre; 
 
@@ -370,73 +370,117 @@ function creacionCards(element,index){
     footerCard.append(divAgregar);
     
     arregloCard.push(objeto);
-
+    
     i++;
 }
 
 
-if($("#mainIndex").val() =="1"){ //solo en el index generará 5 cards, en el resto generará 10
-    for (let i = 0; i < 4; i++) {
-        var random1 = Math.floor(Math.random() * infoProducto.length);
-        var random2;
-        var arregloRandom = [];
-        while(arregloRandom.length < infoProducto[random1].length ){
-            var random2 = Math.ceil(Math.random()* infoProducto[random1].length);
-            var existe = false;
-            for(var a=0;a<arregloRandom.length;a++){
-                if(arregloRandom[i] == random2){
-                    existe = true;
-                    break;
+if($("#mainIndex").val() =="1"){ 
+    mostrarCards()
+    function mostrarCards(){
+        let numeros=[];
+        let random2;
+        let totalcards = 5;
+        for (let i = 0; i < totalcards; i++) {
+            var random1 = Math.floor(Math.random() * 3);
+            var arreglo = infoProducto[random1];  
+            function numerosAleatoriosNoRepetidos(min, max, cantidad) {
+                
+            
+                if (min>max || cantidad>max-min) {
+                    return false;
                 }
+            
+                while (numeros.length<cantidad) {
+                    const num=Math.floor((Math.random() * (max - min)) + min );
+                    if (numeros.indexOf(num)==-1) {
+                        numeros.push(num);
+                    }
+                }
+                return numeros;
             }
-            if(!existe){
-                arregloRandom[arregloRandom.length] = infoProducto[random1].length;
-            }
-    
+            random2 = numerosAleatoriosNoRepetidos(0,infoProducto[random1].length - 1,totalcards)
+            creacionCards(arreglo,random2[i]);
+            
+            
         }
-        var arreglo = infoProducto[random1];
+        $(".divMedio").on("click",function(){
 
-        creacionCards(arreglo,random2);
-        arregloRandom = []
+            var indiceProducto =($(this).attr('id'))[($(this).attr('id')).length -1];
+        
+            $("#tituloModal").text(arregloCard[parseInt(indiceProducto)].nombre);
+            $("#codigoModal").text("COD: " + arregloCard[parseInt(indiceProducto)].codigo);
+            $("#imagenModal").attr("src", arregloCard[indiceProducto].imagen);
+            $("#descripcionModal").text(arregloCard[indiceProducto].descripcion);
+            $("#precioModal").text(new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(arregloCard[indiceProducto].precio));
+        
+        })
+        i = 0;
+    
     }
-   
+    function eliminarCards(){
+        $("#contenedorCard").html("");
+        arregloCard = [];
+    }
+
+    
+    setInterval(mostrarCards,10001)
+    setInterval(eliminarCards,10000)
+    
+    
+    
+    
 }else{
-    for (let i = 0; i < 10; i++) {
-        var random1 = Math.floor(Math.random() * infoProducto.length);
-        var random2;
-        var arregloRandom = []
-        while(arregloRandom.length < infoProducto[random1].length ){ 
-            var random2 = Math.ceil(Math.random()* infoProducto[random1].length);
-            var existe = false;
-            for(var a=0;a<arregloRandom.length;a++){
-                if(arregloRandom[i] == random2){
-                    existe = true;
-                    break;
+    mostrarCards()
+    function mostrarCards(){
+        let numeros=[];
+    for (let i = 0; i < 4; i++) {
+        var random1 = Math.floor(Math.random() * 3);
+        var arreglo = infoProducto[random1];  
+        function numerosAleatoriosNoRepetidos(min, max, cantidad) {
+            
+         
+            if (min>max || cantidad>max-min) {
+                return false;
+            }
+         
+            while (numeros.length<cantidad) {
+                const num=Math.floor((Math.random() * (max - min)) + min );
+                if (numeros.indexOf(num)==-1) {
+                    numeros.push(num);
                 }
             }
-            if(!existe){
-                arregloRandom[arregloRandom.length] = infoProducto[random1].length;
-            }
-    
+            return numeros;
         }
-       
-        var arreglo = infoProducto[random1];
-        creacionCards(arreglo,random2);
+        random2 = numerosAleatoriosNoRepetidos(0,infoProducto[random1].length - 1,4)
+        creacionCards(arreglo,random2[i]);
+        
+        
     }
+    $(".divMedio").on("click",function(){
+
+        var indiceProducto =($(this).attr('id'))[($(this).attr('id')).length -1];
+    
+        $("#tituloModal").text(arregloCard[parseInt(indiceProducto)].nombre);
+        $("#codigoModal").text("COD: " + arregloCard[parseInt(indiceProducto)].codigo);
+        $("#imagenModal").attr("src", arregloCard[indiceProducto].imagen);
+        $("#descripcionModal").text(arregloCard[indiceProducto].descripcion);
+        $("#precioModal").text(new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(arregloCard[indiceProducto].precio));
+    
+    })
+    
+    }
+    function eliminarCards(){
+        $("#contenedorCard").html("");
+        
+    }
+
+    
+    setInterval(mostrarCards,10001)
+    setInterval(eliminarCards,10000)
 }
 
 
-$(".divMedio").on("click",function(){
-
-    var indiceProducto =($(this).attr('id'))[($(this).attr('id')).length -1];
-
-    $("#tituloModal").text(arregloCard[parseInt(indiceProducto)].nombre);
-    $("#codigoModal").text("COD: " + arregloCard[parseInt(indiceProducto)].codigo);
-    $("#imagenModal").attr("src", arregloCard[indiceProducto].imagen);
-    $("#descripcionModal").text(arregloCard[indiceProducto].descripcion);
-    $("#precioModal").text(new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(arregloCard[indiceProducto].precio));
-
-})
 
 
    
