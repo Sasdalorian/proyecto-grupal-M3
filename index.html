@@ -84,29 +84,10 @@
         </header>
         <br><br>
         
-        <main >
+        <main id="indexMain">
             <!-- CARD CREADAS-->
             <div class="row  g-4 mt-5  card-group " id="contenedorCard" style="justify-content: center" ></div>
-
-                <!--  CARRITO MODAL-->
-            <div class="modal fade" id="carro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" >Título del modal</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body" id="contenidoCarro">
-                    
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Comprar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+           
                 <!--  CLICK PRODUCTO MODAL-->
               <div class="modal fade" id="detalleProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
                 <div class="modal-dialog"  >
@@ -137,7 +118,7 @@
 
         <!-- FOOTER -->
         <footer>
-          <div class="contenedor-redes-sociales">
+          <div class="contenedor-redes-sociales" >
             <a class="facebook" href="https://es-la.facebook.com/" target="_blank">
               <span class="circulo"> <img class="rrss" src="./img/rrss/fbk.png" alt=""> <i class="fa fa-facebook"></i></span>
               <span class="titulo">Facebook </span>
@@ -164,8 +145,9 @@
         <script src="./js/bootstrap.bundle.min.js"></script>
         <script src="./script/navbar.js"></script>
         <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="/js/cards.js"></script>
         <script src="/js/carro.js"></script>
+        <script src="/js/cards.js"></script>
+        
         <script type="module">
             import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
           </script>

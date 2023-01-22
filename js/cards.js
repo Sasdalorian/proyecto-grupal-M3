@@ -332,6 +332,7 @@ function creacionCards(element,index){
     boton.id = "boton-" + i;
     boton.className = "btn bg-primary";
     boton.textContent = "Añadir al Carro";
+    boton.setAttribute("onclick","agregarAlCarro()");
 
     
     
