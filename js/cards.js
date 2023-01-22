@@ -250,18 +250,9 @@ var infoProducto = [
 ]
 
 
+//variables creacion de cards
+var divMedio,divInterno,footerCard ,tituloCard, descripcionCard, labelcheck, boton, imgCard ,selecCantidad, labelCantidad , i = 0;
 
-var divMedio;
-var divInterno;
-var footerCard;
-var tituloCard;
-var descripcionCard;
-var labelcheck;
-var boton;
-var imgCard;
-var selecCantidad;
-var labelCantidad;
-var i = 0;
 var index;
 var precio;
 var codigo;
@@ -376,13 +367,15 @@ function creacionCards(element,index){
 
 
 if($("#mainIndex").val() =="1"){ 
-    mostrarCards()
+    
     function mostrarCards(){
         let numeros=[];
-        let random2;
+        var random1, random2;
+       
         let totalcards = 5;
+        
         for (let i = 0; i < totalcards; i++) {
-            var random1 = Math.floor(Math.random() * 3);
+            var random1 = Math.floor(Math.random() * infoProducto.length);
             var arreglo = infoProducto[random1];  
             function numerosAleatoriosNoRepetidos(min, max, cantidad) {
                 
@@ -399,7 +392,7 @@ if($("#mainIndex").val() =="1"){
                 }
                 return numeros;
             }
-            random2 = numerosAleatoriosNoRepetidos(0,infoProducto[random1].length - 1,totalcards)
+            random2 = numerosAleatoriosNoRepetidos(0,arreglo.length - 1,totalcards)
             creacionCards(arreglo,random2[i]);
             
             
@@ -423,7 +416,7 @@ if($("#mainIndex").val() =="1"){
         arregloCard = [];
     }
 
-    
+    mostrarCards()
     setInterval(mostrarCards,10001)
     setInterval(eliminarCards,10000)
     
@@ -479,9 +472,3 @@ if($("#mainIndex").val() =="1"){
     setInterval(mostrarCards,10001)
     setInterval(eliminarCards,10000)
 }
-
-
-
-
-   
-
