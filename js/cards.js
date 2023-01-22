@@ -302,14 +302,14 @@ function creacionCards(element,index){
     objeto.descripcion = element[index].descripcion;
 
     precio = document.createElement("h2");
-    precio.className = "card-text ps-2 ";
+    precio.className = "card-text ps-2 precio";
     precio.textContent = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(element[index].precio);
     precio.id = "precio-" + i;
     objeto.precio = element[index].precio;
     precio.style = " margin-top: auto;";
 
     codigo = document.createElement("p");
-    codigo.className = "card-text ps-2";
+    codigo.className = "card-text ps-2 codigo";
     codigo.textContent = "COD: " + element[index].codigo;
     codigo.id = "codigo-" + i;
     objeto.codigo = element[index].codigo;
