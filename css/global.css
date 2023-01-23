@@ -53,6 +53,9 @@ body{
 } 
 
 /*  CARRITO */
+#carrito{
+   width: 500px;
+}
 .submenu {
    position: relative;
 }
