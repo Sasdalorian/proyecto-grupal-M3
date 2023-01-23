@@ -10,14 +10,14 @@ var infoProducto = [
             imagen: "/img/calzado/blaze-court.png",
             codigo: 1234567890,
             descripcion: "zapatilla de basquetball unisex",
-            precio: 00000
+            precio: 49990
         },
         {
             nombre: "Zapatilla Deviaten Nitro",
             imagen: "/img/calzado/deviaten-nitro.png",
             codigo: 1234567890,
             descripcion: "zapatilla running mujer color verde",
-            precio: 00000
+            precio: 57990
 
         },
         {
@@ -25,7 +25,7 @@ var infoProducto = [
             imagen: "/img/calzado/florence.png",
             codigo: 1234567890,
             descripcion: "zapatillas urbanas mujer",
-            precio: 00000
+            precio: 37990
 
         },
         {
@@ -33,15 +33,15 @@ var infoProducto = [
             imagen: "/img/calzado/magnify-nitro.png",
             codigo: 1234567890,
             descripcion: "zapatillas running hombre color rojo",
-            precio: 00000
+            precio: 104990
 
         },
         {
             nombre: "Zapatilla Mercurial Victory",
-            imagen: "/img/calzado/mercurial-victory.png",
+            imagen: "/img/calzado/mercurial-victory.jpg",
             codigo: 1234567890,
             descripcion: "zapatillas baby futbol unisex",
-            precio: 00000
+            precio: 98990
 
         },
         {
@@ -49,7 +49,7 @@ var infoProducto = [
             imagen: "/img/calzado/mercury.jfif",
             codigo: 1234567890,
             descripcion: "Zapatos de futbol mujer color dorado ",
-            precio: 00000
+            precio: 74990
 
         },
         {
@@ -57,7 +57,7 @@ var infoProducto = [
             imagen: "/img/calzado/slipstream.png",
             codigo: 1234567890,
             descripcion: "zapatilla urbana de caña alta unisex ",
-            precio: 00000
+            precio: 64990
 
         },
         {
@@ -65,7 +65,7 @@ var infoProducto = [
             imagen: "/img/calzado/suede-classicxxi.png",
             codigo: 1234567890,
             descripcion: "Zapatilla urbana mujer color rosado",
-            precio: 00000
+            precio: 89990
 
         },
         {
@@ -73,7 +73,7 @@ var infoProducto = [
             imagen: "/img/calzado/superfly.jfif",
             codigo: 1234567890,
             descripcion: "Zapato de futbol hombre color rojo",
-            precio: 00000
+            precio: 49990
 
         },
         {
@@ -81,7 +81,7 @@ var infoProducto = [
             imagen: "/img/calzado/voyage-nitro.png",
             codigo: 1234567890,
             descripcion: "zapatillas running hombre color negro",
-            precio: 00000
+            precio: 65000
 
     }],
     [
@@ -90,14 +90,14 @@ var infoProducto = [
             imagen: "/img/camisetas/argentina.png",
             codigo: 1234567890,
             descripcion: "Camiseta oficial seleccion Argentina 3 estrellas",
-            precio: 00000
+            precio: 53990
         },
         {
             nombre: "Camiseta Barcelona",
             imagen: "/img/camisetas/barca.jfif",
             codigo: 1234567890,
             descripcion: "Camiseta Barcelona 22-23 Oficial",
-            precio: 00000
+            precio: 45990
 
         },
         {
@@ -105,7 +105,7 @@ var infoProducto = [
             imagen: "/img/camisetas/boca.jfif",
             codigo: 1234567890,
             descripcion: "Nueva camiseta de Boca oficial y de visitante",
-            precio: 00000
+            precio: 39990
 
         },
         {
@@ -113,7 +113,7 @@ var infoProducto = [
             imagen: "/img/camisetas/chile.jfif",
             codigo: 1234567890,
             descripcion: "Camiseta seleccion chilena local  22-23 oficial",
-            precio: 00000
+            precio: 39490
 
         },
         {
@@ -121,7 +121,7 @@ var infoProducto = [
             imagen: "/img/camisetas/jordan-flight.png",
             codigo: 1234567890,
             descripcion: "Camiseta diseno zapatillas Jordan color negra",
-            precio: 00000
+            precio: 32430
 
         },
         {
@@ -129,7 +129,7 @@ var infoProducto = [
             imagen: "/img/camisetas/jordan3.png",
             codigo: 1234567890,
             descripcion: "Camiseta diseno Jordan color negra",
-            precio: 00000
+            precio: 53980
 
         },
         {
@@ -137,15 +137,15 @@ var infoProducto = [
             imagen: "/img/camisetas/jordan-flight.png",
             codigo: 1234567890,
             descripcion: "Camiseta Jordan Flight mujer diseno espalda color roja",
-            precio: 00000
+            precio: 56990
 
         },
         {
             nombre: "Camiseta Lebron",
-            imagen: "/img/camisetas/lebron.png",
+            imagen: "/img/camisetas/lakers.jfif",
             codigo: 1234567890,
             descripcion: "Camiseta basquetball oficial Lebron",
-            precio: 00000
+            precio: 47950
 
         },
         {
@@ -153,7 +153,7 @@ var infoProducto = [
             imagen: "/img/camisetas/psg.jfif",
             codigo: 1234567890,
             descripcion: "Camiseta primera equipacion PSG 22-23 oficial",
-            precio: 00000
+            precio: 42990
 
         },
         {
@@ -161,89 +161,89 @@ var infoProducto = [
             imagen: "/img/camisetas/runningmc.jfif",
             codigo: 1234567890,
             descripcion: "Camiseta running mujer manga corta diseno team colores ",
-            precio: 00000
+            precio: 27480
 
         }
     
     ],
     [
         {
-            nombre: "ZAPATILLAS TRC BLAZE COURT",
-            imagen: "/img/zapatillas/ZAPATILLAS DE BASKETBALL TRC BLAZE COURT.png",
+            nombre: "Poleron Anaheim Crew",
+            imagen: "/img/polerones/anaheim floral crew.png",
             codigo: 7543214956671,
-            descripcion: "Estas zapatillas se inspiran en las Blaze of Glory y se encargan de que todo esté fresco dentro y fuera del campo de juego. Equipadas con la triple amenaza Trinomic de amortiguación, flexibilidad y estabilidad, estas zapatillas tienen un diseño de caña baja, pero con una gran devolución de la energía.",
-            precio: 89990
+            descripcion: "Poleron mujer diseno floral",
+            precio: 27900
         },
         {
-            nombre: "ZAPATILLAS SLIPSTREAM",
-            imagen: "/img/zapatillas/ZAPATILLAS DE CAÑA MEDIA SLIPSTREAM SC.png",
+            nombre: "Poleron Unisex",
+            imagen: "/img/polerones/diseno espalda.png",
             codigo: 7543214830377,
-            descripcion: "Las Slipstream son un verdadero ícono del calzado, con un legado que se remonta a 1987. Si bien se pensaron como una zapatilla de basketball prémium, los creadores de tendencia no tardaron en reconocer que su comodidad y resistencia eran perfectas para las calles.",
-            precio: 119990
+            descripcion: "Poleron diseno espalda unisex color negro con gorro",
+            precio: 40940
     
         },
         {
-            nombre: "ZAPATILLAS DEVIATE NITRO",
-            imagen: "/img/zapatillas/ZAPATILLAS DE RUNNING PARA HOMBRE DEVIATE NITRO.png",
+            nombre: "Poleron coleccion",
+            imagen: "/img/polerones/fleece tie dye pullover.png",
             codigo: 7543214906186,
-            descripcion: "Excelente performance en la distancia que sea. Las DEVIATE NITRO tienen un diseño amortiguado que viene a innovar en la tendencia de las zapatillas de running de máximo performance para que correr más rápido sea cada vez más fácil.",
-            precio: 129990
+            descripcion: "Poleron ninos diseno  coleccion color azul.",
+            precio: 34500
     
         },
         {
-            nombre: "ZAPATILLAS MAGNIFY NITRO",
-            imagen: "/img/zapatillas/ZAPATILLAS DE RUNNING PARA HOMBRE MAGNIFY NITRO.png",
+            nombre: "Poleron Nike Air",
+            imagen: "/img/polerones/Nike-Air.png",
             codigo: 7543214564112,
-            descripcion: "Dicho de forma sencilla, estas zapatillas te siguen ofreciendo lo mejor. Para empezar, tienen una mediasuela con NITRO FOAM, la tecnología avanzada de PUMA diseñada para ofrecer una adaptación y una amortiguación increíbles.",
-            precio: 109990
+            descripcion: "Poleron unisex nike air negro",
+            precio: 39950
     
         },
         {
-            nombre: "ZAPATILLAS VOYAGE NITRO",
-            imagen: "/img/zapatillas/ZAPATILLAS DE RUNNING PARA MUJER VOYAGE NITRO.png",
+            nombre: "Poleron One Piece",
+            imagen: "/img/polerones/one piece vans.png",
             codigo: 7543214519667,
-            descripcion: "Dicho de forma sencilla, estas zapatillas te siguen ofreciendo lo mejor. Para empezar, tienen una mediasuela con NITRO FOAM, la tecnología avanzada de PUMA diseñada para ofrecer una adaptación y una amortiguación increíbles.",
-            precio: 109990
+            descripcion: "Poleron unisex Vans diseno one piece",
+            precio: 25990
     
         },
         {
-            nombre: "ZAPATILLAS SK8-HI ONE PIECE",
-            imagen: "/img/zapatillas/ZAPATILLAS SK8-HI ONE PIECE PUNK HAZARD MULTI.png",
+            nombre: "Poleron One Piece",
+            imagen: "/img/polerones/one piece.png",
             codigo: 7543214621041,
-            descripcion: "Rindamos homenaje al poder de la amistad Acompaña a Monkey D. Luffy y a su tripulación pirata en su búsqueda del tesoro supremo, el One Piece, con esta colección exclusiva de Vans x One Piece.",
-            precio: 94990
+            descripcion: "Poleron one piece off the wall color azul",
+            precio: 27990
     
         },
         {
-            nombre: "ZAPATILLAS SUEDE CLASSIC XXI",
-            imagen: "/img/zapatillas/ZAPATILLAS SUEDE CLASSIC XXI.png",
+            nombre: "Poleron Therma Fit",
+            imagen: "/img/polerones/Therma Fit Insectos.png",
             codigo: 7543214874446,
-            descripcion: "Con un gran impacto en la cultura del calzado, las zapatillas más icónicas de PUMA entraron a la escena por primera vez en 1968 y han sido usadas desde entonces por los íconos de cada generación. Las Suede Classic XXI cuentan con un empeine completo de gamuza y toques modernos, que mejoran la calidad general y hacen que se sientan mejor que nunca.",
-            precio: 69990
+            descripcion: "Poleron unisex diseno insectos",
+            precio: 37980
     
         },
         {
-            nombre: "ZAPATILLAS ONE PIECE COOKIE",
-            imagen: "/img/zapatillas/ZAPATILLAS UA AUTHENTIC 44 DX ONE PIECE COOKIE.png",
+            nombre: "Poleron Vans",
+            imagen: "/img/polerones/vans hombre.png",
             codigo: 7543214875716,
-            descripcion: "Las zapatillas Authentic Vans x One Piece combinan una estética náutica inspirada en el emblemático manga japonés con unas palas de yute bordadas con divertidos símbolos de One Piece en honor a los inconfundibles sombreros de paja de la serie.",
-            precio: 99990
+            descripcion: "Poleron negro vans hombre",
+            precio: 29990
     
         },
         {
-            nombre: "ZAPATILLAS ONE PIECE HAT CREW",
-            imagen: "/img/zapatillas/ZAPATILLAS UA AUTHENTIC ONE PIECE STRAW HAT CREW.png",
+            nombre: "Poleron Vans",
+            imagen: "/img/polerones/vans-off the wall.png",
             codigo: 7543214103528,
-            descripcion: "Las zapatillas Authentic Vans x One Piece combinan una estética náutica inspirada en el emblemático manga japonés con unas palas de yute bordadas con divertidos símbolos de One Piece en honor a los inconfundibles sombreros de paja de la serie.",
-            precio: 59990
+            descripcion: "Poleron ninos vans off the wall",
+            precio: 29990
     
         },
         {
-            nombre: "ZAPATILLAS NATHAN FLORENCE",
-            imagen: "/img/zapatillas/ZAPATILLAS UA ULTRARANGE VR3 NATHAN FLORENCE.png",
+            nombre: "Poleron Floral Animal Crew",
+            imagen: "/img/polerones/floral animal crew.png",
             codigo: 7543214254000,
-            descripcion: "Procedente de la costa norte de Oahu, Nathan Florence creció con algunas de las olas más emblemáticas del mundo justo delante de su puerta. Ese entorno único no solo convirtió a Nathan en el surfista que actualmente es, sino que encendió en él la llama que le permitió continuar buscando lugares de surf desafiantes.",
-            precio: 109990
+            descripcion: "Poleron mujer Animal",
+            precio: 25100
     
         }]
 ]
