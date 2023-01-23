@@ -1,14 +1,14 @@
-// FALTA DESIGNARLE VARIABLE A CARRITOESTAVACIO 
-const carritoEstaVacio = (items de la lista === 0):
+
+const cardList = document.getElementsByClassName('card-text');  // <--- HAY QUE DESIGNAR CLASE
+const carritoEstaVacio = (cardList === 0);
 
 if (carritoEstaVacio) {
-    document.getElementsByClassName('carrito__lista')
+    document.getElementsByClassName('u-full-width')
     [0].style.display = "none";
     document.getElementsByClassName('vacio')
     [0].style.display = "block"
-}
-if (!carritoEstaVacio) {
-    document.getElementsByClassName('carrito__lista')
+} else {
+    document.getElementsByClassName('u-full-width')
     [0].style.display = "block";
     document.getElementsByClassName('vacio')
     [0].style.display = "none";
