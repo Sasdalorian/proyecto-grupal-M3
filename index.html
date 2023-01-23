@@ -20,27 +20,21 @@
             <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
-                        <img id="logo" src="img/coming-soon.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        <img id="logo" src="img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                         Deportes JS
                       </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
                     <div>
                       <ul class="navbar-nav navbar-left">
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Zapatillas</a>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Calzados</a></li>
+                            <li><a class="dropdown-item" href="#">Poleras</a></li>
+                            <li><a class="dropdown-item" href="#">Camisetas</a></li>
+                          </ul>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Poleras</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Polerones</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Chaquetas</a>
-                        </li>
-
                       </ul>
                     </div>
 
@@ -50,7 +44,7 @@
                       <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                       <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
-
+                    
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav navbar-right">
                         <li class="nav-item">
@@ -66,7 +60,6 @@
                           <a class="nav-link" href="#">Sigue tu orden</a>
                         </li>
                         <div class="nav-iconos">
-
                           <!--  ICONO CARRITO Y SUBMENU  -->
                           <li class="nav-item submenu">
                               <img class="nav-icono-carrito" src="https://img.icons8.com/material-rounded/100/FFFFFF/shopping-cart-loaded.png"/>
@@ -106,11 +99,29 @@
 
         <br><br>
         
-        <main id="indexMain" style="margin-top: 600px;">
+        <main >
             <!-- CARD CREADAS-->
-            <div id="countdown"></div>
             <div class="row  g-4 mt-5  card-group " id="contenedorCard" style="justify-content: center" ></div>
-           
+
+                <!--  CARRITO MODAL-->
+            <div class="modal fade" id="carro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" >Título del modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body" id="contenidoCarro">
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
                 <!--  CLICK PRODUCTO MODAL-->
               <div class="modal fade" id="detalleProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
                 <div class="modal-dialog"  >
@@ -141,7 +152,7 @@
 
         <!-- FOOTER -->
         <footer>
-          <div class="contenedor-redes-sociales" >
+          <div class="contenedor-redes-sociales">
             <a class="facebook" href="https://es-la.facebook.com/" target="_blank">
               <span class="circulo"> <img class="rrss" src="./img/rrss/fbk.png" alt=""> <i class="fa fa-facebook"></i></span>
               <span class="titulo">Facebook </span>
@@ -164,13 +175,10 @@
 
         
         <!-- SCRIPTS -->
-        <script src="bootstrap-js/bootstrap.min.js"></script>
-        <script src="./js/bootstrap.bundle.min.js"></script>
-        <script src="./script/navbar.js"></script>
+        <script src="bootstrap-js/bootstrap.bundle.min.js"></script>
         <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="/js/carro.js"></script>
         <script src="/js/cards.js"></script>
-        
+        <script src="/js/carro.js"></script>
         <script type="module">
             import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
           </script>
