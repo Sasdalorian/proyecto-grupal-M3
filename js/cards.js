@@ -257,6 +257,7 @@ var precio;
 var arregloCard = [];
 //Función creadora de cards
 function creacionCards(element,index){
+    
     //Creación de elementos html y asignación de atributos
     var objeto = {  nombre: undefined,
                     imagen: undefined,
@@ -299,6 +300,7 @@ function creacionCards(element,index){
     descripcionCard = document.createElement("p");
     objeto.descripcion = element[index].descripcion;
     descripcionCard.id = "descripcion-" + i;
+    descripcionCard.style = "display: none;"
     
 
     precio = document.createElement("h2");
@@ -330,14 +332,15 @@ function creacionCards(element,index){
     boton = document.createElement("button");
     boton.type = "button";
     boton.id = "boton-" + i;
-    boton.className = "btn bg-primary btnAgregar";
+    boton.className = "btn bg-dark btnAgregar";
     boton.textContent = "Añadir al Carro";
+    boton.style = "color: white"
     
 
     
     
     selecCantidad = document.createElement("input");
-    selecCantidad.id = "cantidad" + i
+    selecCantidad.id = "cantidad-" + i
     selecCantidad.type = "number";
     selecCantidad.min = 1;
     selecCantidad.max = 15;
@@ -361,6 +364,7 @@ function creacionCards(element,index){
     divCantidad.append(selecCantidad);
     footerCard.append(divCantidad);
     footerCard.append(divAgregar);
+    footerCard.append(descripcionCard);
     
     arregloCard.push(objeto);
     
@@ -370,6 +374,62 @@ function creacionCards(element,index){
 
 if($("#mainIndex").val() =="1"){ 
     
+    function mostrarCards(){
+        let numeros=[];
+        var random1, random2;
+       
+        let totalcards = 5;
+        
+        for (let i = 0; i < totalcards; i++) {
+            var random1 = Math.floor(Math.random() * infoProducto.length);
+            var arreglo = infoProducto[random1];  
+            function numerosAleatoriosNoRepetidos(min, max, cantidad) {
+                
+            
+                if (min>max || cantidad>max-min) {
+                    return false;
+                }
+            
+                while (numeros.length<cantidad) {
+                    const num=Math.floor((Math.random() * (max - min)) + min );
+                    if (numeros.indexOf(num)==-1) {
+                        numeros.push(num);
+                    }
+                }
+                return numeros;
+            }
+            random2 = numerosAleatoriosNoRepetidos(0,arreglo.length - 1,totalcards)
+            creacionCards(arreglo,random2[i]);
+            
+            
+        }
+        
+        i = 0;
+    
+    }
+    function eliminarCards(){
+        $("#contenedorCard").html("");
+        arregloCard = [];
+    }
+
+    mostrarCards()
+    
+    $(".divMedio").on("click",function(){
+
+        var indiceProducto =($(this).attr('id'))[($(this).attr('id')).length -1];
+        
+        $("#tituloModal").text(arregloCard[parseInt(indiceProducto)].nombre);
+        $("#codigoModal").text("COD: " + arregloCard[parseInt(indiceProducto)].codigo);
+        $("#imagenModal").attr("src", arregloCard[indiceProducto].imagen);
+        $("#descripcionModal").text(arregloCard[indiceProducto].descripcion);
+        $("#precioModal").text(new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(arregloCard[indiceProducto].precio));
+    
+    })
+    
+      
+    
+    
+}else{
     function mostrarCards(){
         let numeros=[];
         var random1, random2;
@@ -420,37 +480,5 @@ if($("#mainIndex").val() =="1"){
 
     mostrarCards()
     
-    
-    
-      
-    
-    
-}else{
-    mostrarCards()
-    function mostrarCards(){
-        let numeros=[];
-    for (let i = 0; i < 4; i++) {
-        var random1 = Math.floor(Math.random() * 3);
-        var arreglo = infoProducto[random1];  
-        function numerosAleatoriosNoRepetidos(min, max, cantidad) {
-            
-         
-            if (min>max || cantidad>max-min) {
-                return false;
-            }
-         
-            while (numeros.length<cantidad) {
-                const num=Math.floor((Math.random() * (max - min)) + min );
-                if (numeros.indexOf(num)==-1) {
-                    numeros.push(num);
-                }
-            }
-            return numeros;
-        }
-        random2 = numerosAleatoriosNoRepetidos(0,infoProducto[random1].length - 1,4)
-        creacionCards(arreglo,random2[i]);
-        
-        
-    }
 }
-}
+
