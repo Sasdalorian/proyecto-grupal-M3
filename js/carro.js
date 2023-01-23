@@ -1,8 +1,13 @@
 var arregloCarro = [];
+console.log(arregloCarro.length)
 
+if(arregloCarro.length == 0){
+  $("#headTablaCarro").hide();
+}
 
 $(".btnAgregar").on("click",function(){
   $(".contenedorProducto").remove();
+  $("#headTablaCarro").show();
  
   var objetoCarro = { nombre: undefined,
                       imagen: undefined,
@@ -37,9 +42,11 @@ $(".btnAgregar").on("click",function(){
     var cantidadAñadida = document.getElementById(idCantidad).value;
     arregloCarro[indiceEnCarro].cantidad = parseInt(cantidadAñadida) + parseInt(arregloCarro[indiceEnCarro].cantidad);
     alert("Cantidad Modificada")
+    $(".vacio").hide()
   }else{    
     alert("Producto añadido")
     arregloCarro.push(objetoCarro)
+    $(".vacio").hide()
 
   }
   

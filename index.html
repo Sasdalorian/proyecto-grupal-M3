@@ -64,14 +64,15 @@
                       <li class="nav-item submenu">
                           <img class="nav-icono-carrito" src="https://img.icons8.com/material-rounded/100/FFFFFF/shopping-cart-loaded.png"/>
                           <div id="carrito">
+                            <p>Carrito de Compra</p>
                             <p class="vacio">No hay productos en el carrito.</p>
                             <table class="u-full-width">
                               <thead id="headCarro">
-                                <tr>
+                                <tr id="headTablaCarro">
                                   <th>Imagen</th>
                                   <th>Nombre</th>
                                   <th>Cantidad</th>
-                                  <th>Precio Unitario</th>
+                                  <th>Precio</th>
                                 </tr>
                               </thead>
 
@@ -106,17 +107,19 @@
       </div>
           <!--  CLICK PRODUCTO MODAL-->
       <div class="modal fade" id="detalleProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-        <div class="modal-dialog"  >
+        <div class="modal-dialog" id="modal" >
           <div class="modal-content" >
             <div class="modal-header">
-              <h5 class="modal-title" id="titulo">Detalles</h5>
+              <h5 class="modal-title" id="tituloModal"></h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body" id="cuerpoDescripcion">
-                <img src="" alt="Imagen no Disponible">
-                <p id="nombreDescripcion"></p>
-                <p id="codigoDescripcion"></p>
-                <p id="precioDescripcion"></p>
+            <div class="modal-body row" id="cuerpoDescripcion" >
+                <img src="" alt="Imagen no Disponible" id="imagenModal" class="col-6">
+                <div class="col-6">
+                  <p id="descripcionModal"></p>
+                  <p id="codigoModal"></p>
+                  <h4 id="precioModal"></h4>
+                </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
