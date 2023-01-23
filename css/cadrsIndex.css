@@ -1,4 +1,23 @@
 #contenedorCards{
     display: grid;
     grid-template-columns: repeat(auto-fill, 9em);
+   
 }
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+}
+
+.img-fluid{
+    min-height: 300px!important;
+    max-height: 300px!important;
+}
+
+.footerCard{
+    min-height: 250px!important;
+    max-height: 250px!important;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+

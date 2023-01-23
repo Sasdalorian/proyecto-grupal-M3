@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css">
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/cadrsIndex.css">
 
         <title>Deportes JS</title>
     </head>
@@ -55,7 +56,7 @@
                         <li class="nav-item">
                           <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                           <a class="nav-link" href="#">Nosotros</a>
                         </li>
                         <li class="nav-item">
@@ -65,11 +66,32 @@
                           <a class="nav-link" href="#">Sigue tu orden</a>
                         </li>
                         <div class="nav-iconos">
-                          <li class="nav-item">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#carro">
+
+                          <!--  ICONO CARRITO Y SUBMENU  -->
+                          <li class="nav-item submenu">
                               <img class="nav-icono-carrito" src="https://img.icons8.com/material-rounded/100/FFFFFF/shopping-cart-loaded.png"/>
-                            </a>
-                          </li>
+                              <div id="carrito">
+                                <p class="vacio">No hay productos en el carrito.</p>
+                                <table class="u-full-width">
+                                  <thead>
+                                    <tr>
+                                      <th>Imagen</th>
+                                      <th>Nombre</th>
+                                      <th>Cantidad</th>
+                                      <th>Precio</th>
+                                    </tr>
+                                  </thead>
+
+                                  <tbody>
+                                    
+                                  </tbody>
+                                </table>
+                                <div class="container-button-vaciar">
+                                  <a href="#" class="button-vaciar u-full-width">Vaciar Carrito</a>
+                                </div>
+                              </div>
+
+                          <!--  ICONO LOGIN  -->
                           <li class="nav-item">
                             <a href="#">
                               <img class="nav-icono-login" src="https://img.icons8.com/windows/100/FFFFFF/user-male-circle.png"/>
@@ -81,39 +103,49 @@
                 </div>
               </nav>
         </header>
+
         <br><br>
         
         <main >
-            
-            <div class="row mt-5 carousel" id="contenedorCard" style="justify-content: center"></div>
+            <!-- CARD CREADAS-->
+            <div class="row  g-4 mt-5  card-group " id="contenedorCard" style="justify-content: center" ></div>
 
+                <!--  CARRITO MODAL-->
             <div class="modal fade" id="carro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Título del modal</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body" id="contenidoCarro">
-                      
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                      <button type="button" class="btn btn-primary">Comprar</button>
-                    </div>
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" >Título del modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body" id="contenidoCarro">
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
                   </div>
                 </div>
               </div>
+            </div>
 
+                <!--  CLICK PRODUCTO MODAL-->
               <div class="modal fade" id="detalleProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-                <div class="modal-dialog" >
-                  <div class="modal-content">
+                <div class="modal-dialog"  >
+                  <div class="modal-content" >
                     <div class="modal-header">
-                      <h5 class="modal-title" id="titulo"></h5>
+                      <h5 class="modal-title" id="tituloModal"></h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body" id="cuerpoDescripcion">
-                      
+                    <div class="modal-body row" id="cuerpoDescripcion">
+                      <img src="" alt="Imagen no Disponible" id="imagenModal" class="col-6">
+                      <div class="col-6">
+                        <div id="descripcionModal"></div>
+                        <div id="codigoModal" class="mt-1"></div>
+                        <h4 id="precioModal" class="mt-1"></h4>
+                        <label for="cantidadModal">Cantidad:</label>
+                        <input type="number" id="cantidadModal" min="1" max="15" value="1">
+                      </div>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -124,6 +156,7 @@
               </div>
         </main>
        
+
         <!-- FOOTER -->
         <footer>
           <div class="contenedor-redes-sociales">
@@ -147,6 +180,7 @@
           </div>
         </footer>
 
+        
         <!-- SCRIPTS -->
         <script src="bootstrap-js/bootstrap.min.js"></script>
         <script src="./js/bootstrap.bundle.min.js"></script>
