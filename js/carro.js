@@ -1,75 +1,62 @@
-var carroFade, carroDialog, carroContent, carroHeader, carroTitle, cerrarHeader, carroBody, carroFooter, cerrarFooter, carroComprar;
-var carro = [];
+import { infoProducto } from "./cards";
 
+const carrito = document.getElementById("carrito");
+const listaCarrito = document.querySelector("#lista-carrito");
+const vaciarCarrito = document.getElementById("#vaciar-carrito");
 
-//Creacion elementos del carro
-function crearCarro(){
-    carroFade = document.createElement("div");
-    carroFade.className = "modal fade";
-    carroFade.id = "carro";
-    carroFade.setAttribute("tabindex","-1");
-    carroFade.setAttribute("aria-labelledby","exampleModalLabel");
-    carroFade.setAttribute("aria-hidden","true")
+cargarEventos();
 
-    carroDialog = document.createElement("div");
-    carroDialog.className = "modal-dialog";
+function cargarEventos() {
+  productos.addEventListener('click', agregarCarrito);
+  carrito.addEventListener('click', eliminar);
+  vaciarCarrito.addEventListener('click', vaciar);
+  document.addEventListener('DOMContentLoaded', leerLocarStorage);
+};
 
-    carroContent = document.createElement("div");
-    carroContent.className = "modal-content";
+function agregarCarrito(e) {
+  e.preventDefault();
+  if(e.target.classList.contains('bg-primary')) {
+    const producto = e.target.parentElement.parentElement;
+    leerDatos(producto);
+  };
+};
 
-    carroHeader = document.createElement("div");
-    carroHeader.className = "modal-header";
+function leerDatos(producto){
+  const infoProductos = {
+    imagen: producto.querySelector('imagenCard').src,
+    nombre: producto.querySelector('card-title').textContent,
+    precio: producto.querySelector('precio').textContent,
+  }
 
-    carroTitle= document.createElement("h5");
-    carroTitle.textContent = "Carro de Compra"
+  insertarCarrito(infoProductos);
+};
 
-    cerrarHeader = document.createElement("button");
-    cerrarHeader.className = "btn-close";
-    cerrarHeader.type = "button";
-    cerrarHeader.setAttribute("data-bs-dismiss","modal");
-    cerrarHeader.setAttribute("aria-label","Close")
+function insertarCarrito(producto) {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+        <td>
+            <img src="${infoProducto.imagen}" width: 100> 
+        </td>
+        <td>${infoProducto.nombre}</td>
+        <td>${infoProducto.precio}</td>
+        <td>
+            <a href="#" class="vaciar-carrito" productoCodigo="${infoProducto.codigo}">X</a>
+        </td>
+    `;
+    listaCarrito.appendChild(row);
+    guardarCarritoLocalStorage(producto);
+};
 
-    carroBody = document.createElement("div");
-    carroBody.className = "modal-body";
-    carroBody.id = "contenidoCarro";
+function guardarCarritoLocalStorage(e) {
+    e.preventDefault();
 
-    carroFooter = document.createElement("div");
-    carroFooter.className = "modal-footer";
+    let producto,
+        productoCodigo;
 
-    cerrarFooter = document.createElement("button");
-    cerrarFooter.type = "button";
-    cerrarFooter.className = "btn btn-secondary";
-    cerrarFooter.setAttribute("data-bs-dismiss","modal");
-    cerrarFooter.textContent = "Cerrar";
-
-    carroComprar = document.createElement("button");
-    carroComprar.type = "button";
-    carroComprar.className = "btn btn-primary";
-    carroComprar.textContent = "Comprar";
-
-    $("#indexMain").append(carroFade);
-    carroFade.append(carroDialog);
-    carroDialog.append(carroContent);
-    carroContent.append(carroHeader);
-    carroHeader.append(carroTitle);
-    carroHeader.append(cerrarHeader);
-    carroContent.append(carroBody);
-    carroContent.append(carroFooter);
-    carroFooter.append(cerrarFooter);
-    carroFooter.append(carroComprar);
+    if (e.target.classList.contains('vaciar-carrito')) {
+        e.target.parentElement.parentElement.remove();
+        producto = e.target.parentElement.parentElement;
+        productocodigo = producto.querySelector('a').getAtributte('codigo');
+    }
+    eliminarProductoLocalStorage(productoCodigo);
 }
-
-function agregarAlCarro(){
-    
-}
-
-//flujo de funciones
-crearCarro();
-
-
-
-
-
-
-
-

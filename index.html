@@ -66,11 +66,32 @@
                           <a class="nav-link" href="#">Sigue tu orden</a>
                         </li>
                         <div class="nav-iconos">
-                          <li class="nav-item">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#carro">
+
+                          <!--  ICONO CARRITO Y SUBMENU  -->
+                          <li class="nav-item submenu">
                               <img class="nav-icono-carrito" src="https://img.icons8.com/material-rounded/100/FFFFFF/shopping-cart-loaded.png"/>
-                            </a>
-                          </li>
+                              <div id="carrito">
+                                <p class="vacio">No hay productos en el carrito.</p>
+                                <table class="u-full-width">
+                                  <thead>
+                                    <tr>
+                                      <th>Imagen</th>
+                                      <th>Nombre</th>
+                                      <th>Cantidad</th>
+                                      <th>Precio</th>
+                                    </tr>
+                                  </thead>
+
+                                  <tbody>
+                                    
+                                  </tbody>
+                                </table>
+                                <div class="container-button-vaciar">
+                                  <a href="#" class="button-vaciar u-full-width">Vaciar Carrito</a>
+                                </div>
+                              </div>
+
+                          <!--  ICONO LOGIN  -->
                           <li class="nav-item">
                             <a href="#">
                               <img class="nav-icono-login" src="https://img.icons8.com/windows/100/FFFFFF/user-male-circle.png"/>
@@ -82,6 +103,7 @@
                 </div>
               </nav>
         </header>
+
         <br><br>
         
         <main id="indexMain">
