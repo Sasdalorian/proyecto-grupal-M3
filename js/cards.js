@@ -6,84 +6,6 @@ var infoProducto = [
     
     [
         {
-<<<<<<< HEAD
-            nombre: "JORDAN FLIGHT",
-            imagen: "/img/poleras/Jordan-Flight.png",
-            codigo: 7543214123617,
-            descripcion: "Representa la historia de los 6 anillos dondequiera que vayas con esta playera con gráfico. El legendario bling de MJ está serigrafiado sobre un algodón suave y relajado que querrás usar todos los días.",
-            precio: 36990
-        },
-        {
-            nombre: "JORDAN FLIGHT 2",
-            imagen: "/img/poleras/Jordan-Flight2.png",
-            codigo: 7543214450121,
-            descripcion: "El AJ1 es para mucho más que solo tus suelas. Muestra tu pasión por el icónico calzado con una playera suave en un ajuste intencionalmente oversized.",
-            precio: 46990
-
-        },
-        {
-            nombre: "M J 23E SS CREW",
-            imagen: "/img/poleras/MJ-23E-SS-CREW.png",
-            codigo: 7543214272487,
-            descripcion: "Agrega ligereza y vitalidad a tu colección. Confeccionada con algodón suave y clásico, esta playera rinde homenaje a Jordan todos los días con gráficos modernos y un ajuste relajado.",
-            precio: 36990
-
-        },
-        {
-            nombre: "M J BRAND GRAPHIC SS CREW",
-            imagen: "/img/poleras/MJ-BRAND-GRAPHIC-SS-CREW.png",
-            codigo: 7543214318135,
-            descripcion: "Deslízate hacia la primavera con detalles en plata y cromo, estilo Jordan. Esta playera para el día a día es relajada y cómoda, a la vez que hace una declaración.",
-            precio: 36990
-
-        },
-        {
-            nombre: "NIKE SPORTSWEAR",
-            imagen: "/img/poleras/Nike-portswear.png",
-            codigo: 7543214910462,
-            descripcion: "Mira tu bola de cristal y verás nuestra playera suave de algodón con un ajuste relajado. El gráfico está inspirado en la fantasía y la magia, y te preparan para las odiseas desconocidas.",
-            precio: 29990
-
-        },
-        {
-            nombre: "POLERA AKIRA",
-            imagen: "/img/poleras/PoleraAkira.png",
-            codigo: 754321463819,
-            descripcion: "Akira es un joven cuyas habilidades psíquicas fueron desarrolladas artificialmente como parte de un proyecto militar.",
-            precio: 12990
-
-        },
-        {
-            nombre: "POLERA CHAINSAW MAN",
-            imagen: "/img/poleras/PoleraChainsawMan.png",
-            codigo: 7543214932456,
-            descripcion: "Polera color negro alta calidad 100% de algodón, impresión DTF súper durable y resistente.",
-            precio: 15990
-
-        },
-        {
-            nombre: "POLERA GOD USOPP",
-            imagen: "/img/poleras/PoleraGodUsopp.png",
-            codigo: 7543214199899,
-            descripcion: "Usopp es el francotirador de los Piratas de Sombrero de Paja. Es el cuarto miembro de la tripulación y el tercero en unirse oficialmente.",
-            precio: 15990
-
-        },
-        {
-            nombre: "POLERA ONE PIECE COOKIE!",
-            imagen: "/img/poleras/POLERA-ONE-PIECE-COOKIE-SS-TEE-AQUA-SKY.png",
-            codigo: 7543214963901,
-            descripcion: '¡Con detalles únicos inspirados en el icónico anime japonés, Vans x One Piece x Cookie! ¡La camiseta muestra obras de arte imaginativas del artista japonés Cookie! que rinde homenaje al espíritu "Off The Wall" de One Piece y Vans. ',
-            precio: 49990
-
-        },
-        {
-            nombre: "W J AOP GF TEE",
-            imagen: "/img/poleras/WJ -OP-GF-TEE.png",
-            codigo: 7543214615368,
-            descripcion: "Ve por tus kilómetros con estos pants entallados Swoosh Run. Con una tela transpirable absorbente de humedad, puedes pasar menos tiempo preocupándote por el sudor y más tiempo enfocándote en tu pisada. La pretina elástica ajustable y el forro de malla de los muslos hacia abajo te ayudan a mantener la comodidad de principio a fin.",
-            precio: 44990
-=======
             nombre: "Zapatillas Blaze Court",
             imagen: "/img/calzado/blaze-court.png",
             codigo: 1234567890,
@@ -160,90 +82,10 @@ var infoProducto = [
             codigo: 1234567890,
             descripcion: "zapatillas running hombre color negro",
             precio: 00000
->>>>>>> master
 
     }],
     [
         {
-<<<<<<< HEAD
-            nombre: "POLERON DEPORTIVO NIKE AIR",
-            imagen: "/img/polerones/Nike-Air.png",
-            codigo: 754321468779,
-            descripcion: "La silueta llamativa presenta un tejido de punto suave, cisas anchas y tecnología antitranspirante para que pueda usar su estilo en cualquier momento y en cualquier lugar. Look moderno..",
-            precio: 29990
-        },
-        {
-            nombre: "POLERON ONE PIECE TRUE BLUE",
-            imagen: "/img/polerones/POLERA-ONE PIECE-LS-TRUE-BLUE.png",
-            codigo: 7543214142883,
-            descripcion: "Rindamos homenaje al poder de la amistad Acompaña a Monkey D. Luffy y a su tripulación pirata en su búsqueda del tesoro supremo, el One Piece, con esta colección exclusiva de Vans x One Piece..",
-            precio: 39990
-
-        },
-        {
-            nombre: "POLERÓN ANAHEIM FLORAL",
-            imagen: "/img/polerones/POLERON-ANAHEIM-FLORAL-CREW-GREEN-JACKET.png",
-            codigo: 7543214151509,
-            descripcion: "Para homenajear a nuestra primera fábrica de Vans en Anaheim, California, Anaheim Floral Crew busca en el baúl de los recuerdos y logra crear una estética retro con mucho estilo moderno.",
-            precio: 69990
-
-        },
-        {
-            nombre: "POLERÓN FLEECE TIE DYE",
-            imagen: "/img/polerones/POLERON-FLEECE-TIE-DYE-PULLOVER.png",
-            codigo: 7543214305477,
-            descripcion: "Vans y Pretty Guardian Sailor Moon se unen en una colaboración especial para rendir homenaje al concepto del amor y la justicia para todos. Esta colección de calzado y ropa te invita a unirte a las Sailor Guardians y rendir homenaje al popular anime..",
-            precio: 59990,
-            
-
-        },
-        {
-            nombre: "POLERÓN FLORAL ANIMAL CREW",
-            imagen: "/img/polerones/POLERON-FLORAL-ANIMAL-CREW-GRAPE-LEAF.png",
-            codigo: 7543214104812,
-            descripcion: "La sudadera Floral Animal de Vans es un diseño de manga larga y cuello redondo con el logotipo de Vans en el lado izquierdo del pecho. El modelo se completa con un estampado animal integral.",
-            precio: 44990
-
-        },
-        {
-            nombre: "POLERÓN ONE PIECE",
-            imagen: "/img/polerones/POLERON-ONE-PIECE-COOKIE-FLEECE-PO-BLACK.png",
-            codigo: 7543214590872,
-            descripcion: "Festejemos para celebrar el poder de la amistad,únete a Monkey D. Luffy y su Straw Hat Crew en su búsqueda del tesoro supremo, el One Piece, con una colección exclusiva de Vans x One Piece.",
-            precio: 99990
-
-        },
-        {
-            nombre: "POLERÓN PRIDE OTW",
-            imagen: "/img/polerones/POLERON-PRIDE-OTW-GALLERY-PO-BLACK.png",
-            codigo: 7543214872214,
-            descripcion: "100% Algodón, bolsillo frontal, diseño bordado.",
-            precio: 62990
-
-        },
-        {
-            nombre: "POLERÓN SK8 SKULL PO",
-            imagen: "/img/polerones/POLERON-SK8-SKULL-PO.png",
-            codigo: 7543214166175,
-            descripcion: "Con detalles que brillan en la oscuridad para mantenerte abrigado tanto de día como de noche, el Kids Sk8 Skull Pullover tiene gráficos en el pecho y un estampado de tablero de ajedrez en la manga derecha.",
-            precio: 49990
-
-        },
-        {
-            nombre: "POLERÓN TRIPPY GRIN",
-            imagen: "/img/polerones/POLERON-TRIPPY-GRIN-PO-BLACK.png",
-            codigo: 754321475230,
-            descripcion: "La Trippy Grin Pullover está confeccionada en tejido Fleece de 60 % algodón y 40 % poliéster con capucha, un bolsillo tipo canguro en la parte delantera y un clásico bordado de logotipo en caja rodeado de un diseño floral psicodélico.",
-            precio: 39990
-
-        },
-        {
-            nombre: "Therma-Fit PO Hoodie",
-            imagen: "/img/polerones/Therma-Fit PO Hoodie Insects.png",
-            codigo: 7543214454127,
-            descripcion: "Los bichos son parte de la naturaleza, especialmente la naturaleza que rodea al Lago Spirit del estado de Washington. Nos inspiramos en esos espeluznantes insectos para diseñar el estampado de esta resistente y cómoda sudadera con gorro.",
-            precio: 79990
-=======
             nombre: "Camiseta Seleccion Argentina",
             imagen: "/img/camisetas/argentina.png",
             codigo: 1234567890,
@@ -320,7 +162,6 @@ var infoProducto = [
             codigo: 1234567890,
             descripcion: "Camiseta running mujer manga corta diseno team colores ",
             precio: 00000
->>>>>>> master
 
         }
     
@@ -413,14 +254,7 @@ var divMedio,divInterno,footerCard ,tituloCard, descripcionCard, labelcheck, bot
 
 var index;
 var precio;
-<<<<<<< HEAD
-var codigo;
-var linkImagen;
 var arregloCard = [];
-=======
-
->>>>>>> master
-
 //Función creadora de cards
 function creacionCards(element,index){
     //Creación de elementos html y asignación de atributos
@@ -458,10 +292,14 @@ function creacionCards(element,index){
     tituloCard.className = "card-title ps-2";
     tituloCard.textContent = element[index].nombre;
     tituloCard.style = " margin-top: auto;height: 70px";
+    tituloCard.id = "nombreProducto-" + i;
     
     objeto.nombre = element[index].nombre; 
 
+    descripcionCard = document.createElement("p");
     objeto.descripcion = element[index].descripcion;
+    descripcionCard.id = "descripcion-" + i;
+    
 
     precio = document.createElement("h2");
     precio.className = "card-text ps-2 precio";
@@ -492,18 +330,19 @@ function creacionCards(element,index){
     boton = document.createElement("button");
     boton.type = "button";
     boton.id = "boton-" + i;
-    boton.className = "btn bg-primary";
+    boton.className = "btn bg-primary btnAgregar";
     boton.textContent = "Añadir al Carro";
-    boton.setAttribute("onclick","agregarAlCarro()");
+    
 
     
     
     selecCantidad = document.createElement("input");
-    selecCantidad.id = "cantidad"
+    selecCantidad.id = "cantidad" + i
     selecCantidad.type = "number";
     selecCantidad.min = 1;
     selecCantidad.max = 15;
-    selecCantidad.value = 1
+    selecCantidad.value = 1;
+    
 
     labelCantidad = document.createElement("label");
     labelCantidad.for = "cantidad-" + i;
@@ -581,8 +420,6 @@ if($("#mainIndex").val() =="1"){
 
     mostrarCards()
     
-    setInterval(mostrarCards,10001)
-    setInterval(eliminarCards,10000)
     
     
       
@@ -615,28 +452,5 @@ if($("#mainIndex").val() =="1"){
         
         
     }
-    $(".divMedio").on("click",function(){
-
-<<<<<<< HEAD
-        var indiceProducto =($(this).attr('id'))[($(this).attr('id')).length -1];
-    
-        $("#tituloModal").text(arregloCard[parseInt(indiceProducto)].nombre);
-        $("#codigoModal").text("COD: " + arregloCard[parseInt(indiceProducto)].codigo);
-        $("#imagenModal").attr("src", arregloCard[indiceProducto].imagen);
-        $("#descripcionModal").text(arregloCard[indiceProducto].descripcion);
-        $("#precioModal").text(new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(arregloCard[indiceProducto].precio));
-    
-    })
-    
-    }
-    function eliminarCards(){
-        $("#contenedorCard").html("");
-        
-    }
-
-    
-    setInterval(mostrarCards,10001)
-    setInterval(eliminarCards,10000)
 }
-=======
->>>>>>> master
+}

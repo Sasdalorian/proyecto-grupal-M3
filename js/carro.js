@@ -1,62 +1,75 @@
-import { infoProducto } from "./cards";
+arregloCarro = [];
 
-const carrito = document.getElementById("carrito");
-const listaCarrito = document.querySelector("#lista-carrito");
-const vaciarCarrito = document.getElementById("#vaciar-carrito");
+$(".btnAgregar").on("click",function(){
 
-cargarEventos();
+  var objetoCarro = { nombre: undefined,
+                      imagen: undefined,
+                      codigo: undefined,
+                      descripcion: undefined,
+                      precio: undefined,
+                      cantidad: undefined
+                    }
+  var idProducto,nombreCarro,cantidadCarro,precioCarro,idNombreCarro,imagenCarro;
+  
+  idProducto = this.getAttribute("id")[this.getAttribute("id").length - 1];
+  
+  var idNombreCarro = "nombreProducto-" + idProducto;
+  var idCantidad = "cantidad" + idProducto
+  var idImagenCarro = "img-" + idProducto;
+  var idPrecioCarro = "precio-" + idProducto;
+  var idCodigoCarro = "codigo-" + idProducto;
+  var idDescripcion = "codigo-" + idProducto;
+  
+  objetoCarro.nombre = document.getElementById(idNombreCarro).innerText;
+  objetoCarro.imagen = document.getElementById(idImagenCarro).src;
+  objetoCarro.codigo = document.getElementById(idCodigoCarro).innerText;
+  objetoCarro.descripcion = document.getElementById(idDescripcion).innerText;
+  objetoCarro.precio = document.getElementById(idPrecioCarro).innerText;
+  objetoCarro.cantidad = document.getElementById(idCantidad).value;
 
-function cargarEventos() {
-  productos.addEventListener('click', agregarCarrito);
-  carrito.addEventListener('click', eliminar);
-  vaciarCarrito.addEventListener('click', vaciar);
-  document.addEventListener('DOMContentLoaded', leerLocarStorage);
-};
-
-function agregarCarrito(e) {
-  e.preventDefault();
-  if(e.target.classList.contains('bg-primary')) {
-    const producto = e.target.parentElement.parentElement;
-    leerDatos(producto);
-  };
-};
-
-function leerDatos(producto){
-  const infoProductos = {
-    imagen: producto.querySelector('imagenCard').src,
-    nombre: producto.querySelector('card-title').textContent,
-    precio: producto.querySelector('precio').textContent,
+  if(arregloCarro.includes(objetoCarro)){
+    
+    
+    
+    
+  }else{
+    arregloCarro.push(objetoCarro)
+    console.log("no existe")
   }
+  
+  arregloCarro.forEach(element => {
+    var contenedorProductosCarro = document.createElement("tr");
+    
+    imagenCarro = document.createElement("img");
+    imagenCarro.src = element.imagen;
+    imagenCarro.style = "width: 100px; height: 100px; ;"
 
-  insertarCarrito(infoProductos);
-};
+    nombreCarro = document.createElement("th");
+    nombreCarro.textContent = element.nombre
 
-function insertarCarrito(producto) {
-    const row = document.createElement('tr');
-    row.innerHTML = `
-        <td>
-            <img src="${infoProducto.imagen}" width: 100> 
-        </td>
-        <td>${infoProducto.nombre}</td>
-        <td>${infoProducto.precio}</td>
-        <td>
-            <a href="#" class="vaciar-carrito" productoCodigo="${infoProducto.codigo}">X</a>
-        </td>
-    `;
-    listaCarrito.appendChild(row);
-    guardarCarritoLocalStorage(producto);
-};
+    cantidadCarro = document.createElement("th");
+    cantidadCarro.textContent = element.cantidad
 
-function guardarCarritoLocalStorage(e) {
-    e.preventDefault();
+    precioCarro = document.createElement("th");
+    precioCarro = element.precio;
+    
 
-    let producto,
-        productoCodigo;
+    $("#cuerpoCarro").append(contenedorProductosCarro);
+    contenedorProductosCarro.append(imagenCarro)
+    contenedorProductosCarro.append(nombreCarro)
+    contenedorProductosCarro.append(cantidadCarro)
+    contenedorProductosCarro.append(precioCarro)
+    
+  });
+ 
+  
 
-    if (e.target.classList.contains('vaciar-carrito')) {
-        e.target.parentElement.parentElement.remove();
-        producto = e.target.parentElement.parentElement;
-        productocodigo = producto.querySelector('a').getAtributte('codigo');
-    }
-    eliminarProductoLocalStorage(productoCodigo);
-}
+
+ 
+
+
+
+  
+  
+  
+})
