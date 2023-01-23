@@ -23,24 +23,18 @@
                         <img id="logo" src="img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                         Deportes JS
                       </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
                     <div>
                       <ul class="navbar-nav navbar-left">
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Zapatillas</a>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Calzados</a></li>
+                            <li><a class="dropdown-item" href="#">Poleras</a></li>
+                            <li><a class="dropdown-item" href="#">Camisetas</a></li>
+                          </ul>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Poleras</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Polerones</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Chaquetas</a>
-                        </li>
-
                       </ul>
                     </div>
 
@@ -50,7 +44,7 @@
                       <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                       <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
-
+                    
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav navbar-right">
                         <li class="nav-item">
@@ -66,14 +60,13 @@
                           <a class="nav-link" href="#">Sigue tu orden</a>
                         </li>
                         <div class="nav-iconos">
-
                           <!--  ICONO CARRITO Y SUBMENU  -->
                           <li class="nav-item submenu">
                               <img class="nav-icono-carrito" src="https://img.icons8.com/material-rounded/100/FFFFFF/shopping-cart-loaded.png"/>
                               <div id="carrito">
                                 <p class="vacio">No hay productos en el carrito.</p>
                                 <table class="u-full-width">
-                                  <thead>
+                                  <thead class="carrito__lista">
                                     <tr>
                                       <th>Imagen</th>
                                       <th>Nombre</th>
@@ -182,9 +175,7 @@
 
         
         <!-- SCRIPTS -->
-        <script src="bootstrap-js/bootstrap.min.js"></script>
-        <script src="./js/bootstrap.bundle.min.js"></script>
-        <script src="./script/navbar.js"></script>
+        <script src="bootstrap-js/bootstrap.bundle.min.js"></script>
         <script src="/node_modules/jquery/dist/jquery.min.js"></script>
         <script src="/js/cards.js"></script>
         <script src="/js/carro.js"></script>
