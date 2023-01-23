@@ -418,10 +418,12 @@ if($("#mainIndex").val() =="1"){
     }
 
     mostrarCards()
+    
     setInterval(mostrarCards,10001)
     setInterval(eliminarCards,10000)
     
     
+      
     
     
 }else{
