@@ -314,7 +314,7 @@ function creacionCards(element,index){
     tituloCard = document.createElement("h4");
     tituloCard.className = "card-title ps-2";
     tituloCard.textContent = element[index].nombre;
-    tituloCard.style = " margin-top: auto;height: 70px";
+    tituloCard.style = " margin-top: 10px;height: 70px";
     tituloCard.id = "nombreProducto-" + i;
     
     objeto.nombre = element[index].nombre; 
@@ -367,6 +367,7 @@ function creacionCards(element,index){
     selecCantidad.min = 1;
     selecCantidad.max = 15;
     selecCantidad.value = 1;
+    selecCantidad.className = "InputCantidad"
     
 
     labelCantidad = document.createElement("label");

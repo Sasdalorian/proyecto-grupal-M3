@@ -1,16 +1,48 @@
 var arregloCarro = [];
 
-
 if(arregloCarro.length == 0){
   $("#headTablaCarro").hide();
 }
 var idProducto,nombreCarro,cantidadCarro,precioCarro,idNombreCarro,imagenCarro,eliminarCarro,thEliminarCarro,totalProductoCarro,totalCarro;
 
+function total(){
+  $(".totalBruto").remove();
+  $(".totalIVA").remove();
+  
+  var totalBruto,iva,totalNeto,despacho,descuento;
+  sumaBruto = 0;
+  despacho = sumaBruto * 0.05
+  arregloCarro.forEach(element => {
+  sumaBruto += parseInt(element.precio.replace(/[^0-9]+/g, "")) * element.cantidad
+  });
+  iva = (sumaBruto / 1.19) * 0.19;
+  totalNeto = sumaBruto / 1.19;
+
+  if (sumaBruto >= 100000) {
+    descuento = despacho
+  }else{
+    descuento = 0
+  }
+
+  totalBruto = document.createElement("td");
+  totalBruto.setAttribute("colspan","2");
+  totalBruto.className = "totalBruto";
+  totalBruto.textContent = "TOTAL BRUTO: " + new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(sumaBruto);
+
+  var totalIVA= document.createElement("td");
+  totalIVA.setAttribute("colspan","2");
+  totalIVA.className = "totalIVA";
+  totalIVA.textContent = "IVA: " + new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(iva);
+
+  $("#footerTabla").append(totalIVA)
+  $("#footerTabla").append(totalBruto)
+}
+
 $(".btnAgregar").on("click",function(){
   $(".contenedorProducto").remove();
   $(".totalBruto").remove();
   $("#headTablaCarro").show();
-  $("#footerTabla").show()
+  $("#footerTabla").show();
  
   var objetoCarro = { nombre: undefined,
                       imagen: undefined,
@@ -38,7 +70,6 @@ $(".btnAgregar").on("click",function(){
   objetoCarro.precio = document.getElementById(idPrecioCarro).innerText;
   objetoCarro.cantidad = document.getElementById(idCantidad).value;
   
-  
   if(arregloCarro.find(element => element.nombre == objetoCarro.nombre)){
     var indiceEnCarro = arregloCarro.findIndex(element => element.nombre == objetoCarro.nombre);
       var cantidadAñadida = document.getElementById(idCantidad).value;
@@ -60,7 +91,6 @@ $(".btnAgregar").on("click",function(){
     
     arregloCarro.push(objetoCarro);
     $(".vacio").hide()
-
   }
   
   arregloCarro.forEach(element => {
@@ -79,7 +109,6 @@ $(".btnAgregar").on("click",function(){
     cantidadCarro.id = "cantidadCarro-" + indice
     cantidadCarro.textContent = element.cantidad;
 
-
     precioCarro = document.createElement("th");
     precioCarro = element.precio;
 
@@ -88,16 +117,12 @@ $(".btnAgregar").on("click",function(){
 
     thEliminarCarro = document.createElement("th");
     
-
     eliminarCarro = document.createElement("img");
     eliminarCarro.src = "/img/icono-eliminar.png";
     eliminarCarro.style = "height: 20px; width: 25px; filter: brightness(1.1); mix-blen-mode: multiply";
     eliminarCarro.id = "iconoEliminar-" + indice;
     eliminarCarro.className = "iconoEliminar";
-    
-
- 
-      
+  
     $("#cuerpoCarro").append(contenedorProductosCarro);
     contenedorProductosCarro.append(imagenCarro);
     contenedorProductosCarro.append(nombreCarro);
@@ -107,190 +132,148 @@ $(".btnAgregar").on("click",function(){
     contenedorProductosCarro.append(thEliminarCarro);
     thEliminarCarro.append(eliminarCarro);
     
-
-    $(".iconoEliminar").on("click",function(){
-      var idEliminar = this.getAttribute("id")[this.getAttribute("id").length - 1];
-      console.log("id-index: " + idEliminar)
-      var idContenedorProducto = "contenedorProducto-" + idEliminar;
-      console.log("id contenedor producto: " + idContenedorProducto)
-      var contenedorBorrar = document.getElementById(idContenedorProducto)
-      console.log("contenedor producto: "+ contenedorBorrar)
-      contenedorBorrar.remove();
-      arregloCarro.splice(parseInt(idEliminar),1)
-      if(arregloCarro.length === 0){
-        $(".contenedorProducto").remove();
-        $("#headTablaCarro").hide();
-        $(".vacio").show();
-        $("#footerTabla").hide();
-        $(".totalBruto").remove();
-        $(".totalIVA").remove();
-      }
-      $(".totalBruto").remove();
-      $(".totalIVA").remove();
-      total()
-    });
-    
-
-  
-   total()
-
+    total()
     indice ++;
   });
-  //TOTALES
-  function total(){
-    $(".totalBruto").remove();
-    $(".totalIVA").remove();
-    
-    var totalBruto,iva,totalNeto,despacho,footerTabla,descuento;
-    sumaBruto = 0;
-    despacho = sumaBruto * 0.05
-    arregloCarro.forEach(element => {
-    sumaBruto += parseInt(element.precio.replace(/[^0-9]+/g, "")) * element.cantidad
-    });
-    iva = (sumaBruto / 1.19) * 0.19;
-    totalNeto = sumaBruto / 1.19;
-    console.log(Math.floor(iva));
-
-    if (sumaBruto >= 100000) {
-      descuento = despacho
-    }else{
-      descuento = 0
+  $(".iconoEliminar").on("click",function(){
+    var idEliminar = this.getAttribute("id")[this.getAttribute("id").length - 1];
+    var idContenedorProducto = "#contenedorProducto-" + idEliminar;
+    console.log(idContenedorProducto)
+    $(idContenedorProducto).remove();
+    arregloCarro.splice(parseInt(idEliminar),1)
+    if(arregloCarro.length === 0){
+      $(".contenedorProducto").remove();
+      $("#headTablaCarro").hide();
+      $(".vacio").show();
+      $("#footerTabla").hide();
+      $(".totalBruto").remove();
+      $(".totalIVA").remove();
     }
-
-
-
-    totalBruto = document.createElement("td");
-    totalBruto.setAttribute("colspan","2");
-    totalBruto.className = "totalBruto";
-    totalBruto.textContent = "TOTAL BRUTO: " + new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(sumaBruto);
-
-    var totalIVA= document.createElement("td");
-    totalIVA.setAttribute("colspan","2");
-    totalIVA.className = "totalIVA";
-    totalIVA.textContent = "IVA: " + new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(iva);
-
-
-    $("#footerTabla").append(totalIVA)
-    $("#footerTabla").append(totalBruto)
     
+    
+    total()
+    
+  });
+  
+  }
+)
+
+$("#agregarAlCarroModal").on("click",function(){
+  $(".contenedorProducto").remove();
+  $(".totalBruto").remove();
+  $("#headTablaCarro").show();
+  $("#footerTabla").show();
+  
+  var objetoCarro = { nombre: undefined,
+                      imagen: undefined,
+                      codigo: undefined,
+                      descripcion: undefined,
+                      precio: undefined,
+                      cantidad: 1,
+                      totalProducto: 0
+                    }
+  var indice = 0;
+  var idProducto,nombreCarro,cantidadCarro,precioCarro,imagenCarro,thEliminarCarro;
+
+  idProducto = this.getAttribute("id")[this.getAttribute("id").length - 1];
+  
+  objetoCarro.nombre = document.getElementById("tituloModal").innerText;
+  objetoCarro.imagen = document.getElementById("imagenModal").src;
+  objetoCarro.codigo = document.getElementById("codigoModal").innerText;
+  objetoCarro.descripcion = document.getElementById("descripcionModal").innerText;
+  objetoCarro.precio = document.getElementById("precioModal").innerText;
+  objetoCarro.cantidad = document.getElementById("cantidadModal").value;
+
+  if(arregloCarro.find(element => element.nombre == objetoCarro.nombre)){
+    var indiceEnCarro = arregloCarro.findIndex(element => element.nombre == objetoCarro.nombre);
+    var cantidadAñadida = document.getElementById("cantidadModal").value;
+    var montoProductos = parseInt(cantidadAñadida) + parseInt(arregloCarro[indiceEnCarro].cantidad);
+    
+    arregloCarro[indiceEnCarro].precio = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(parseInt(objetoCarro.precio.replace(/[^0-9]+/g, "")))
+    console.log(arregloCarro[indiceEnCarro].precio)
+    
+    arregloCarro[indiceEnCarro].cantidad = montoProductos ;
+    arregloCarro[indiceEnCarro].totalProducto = parseInt(arregloCarro[indiceEnCarro].precio.replace(/[^0-9]+/g, "")) * montoProductos;
+
+    alert("Cantidad Modificada")
+    $(".vacio").hide()
+  }else{    
+    alert("Producto añadido");
+    objetoCarro.totalProducto = parseInt(objetoCarro.precio.replace(/[^0-9]+/g, "")) * parseInt(objetoCarro.cantidad.replace(/[^0-9]+/g, ""))
+    arregloCarro.push(objetoCarro);
+    $(".vacio").hide();
   }
   
- 
-})
-
-$("#agregarAlCarroModal").on("click",function (){
-    $(".contenedorProducto").remove();
-    $("#headTablaCarro").show();
-   
-    var objetoCarro = { nombre: undefined,
-                        imagen: undefined,
-                        codigo: undefined,
-                        descripcion: undefined,
-                        precio: undefined,
-                        cantidad: 1,
-                        totalProducto: 0
-                      }
-    var indice = 0;
-    var idProducto,nombreCarro,cantidadCarro,precioCarro,imagenCarro,thEliminarCarro;
-  
-    idProducto = this.getAttribute("id")[this.getAttribute("id").length - 1];
+  arregloCarro.forEach(element => {
+    var contenedorProductosCarro = document.createElement("tr");
+    contenedorProductosCarro.className = "contenedorProducto";
+    contenedorProductosCarro.id = "contenedorProducto-" + indice
     
-    objetoCarro.nombre = document.getElementById("tituloModal").innerText;
-    objetoCarro.imagen = document.getElementById("imagenModal").src;
-    objetoCarro.codigo = document.getElementById("codigoModal").innerText;
-    objetoCarro.descripcion = document.getElementById("descripcionModal").innerText;
-    objetoCarro.precio = document.getElementById("precioModal").innerText;
-    objetoCarro.cantidad = document.getElementById("cantidadModal").value;
+    imagenCarro = document.createElement("img");
+    imagenCarro.src = element.imagen;
+    imagenCarro.style = "width: 100px; height: 100px; object-fit: fit";
+
+    nombreCarro = document.createElement("th");
+    nombreCarro.textContent = element.nombre
+
+    cantidadCarro = document.createElement("th");
+    cantidadCarro.id = "cantidadCarro-" + indice
+    cantidadCarro.textContent = element.cantidad;
+
+    precioCarro = document.createElement("th");
+    precioCarro = element.precio;
+
+    totalProductoCarro = document.createElement("th");
+    totalProductoCarro.textContent = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(element.totalProducto)
+
+    thEliminarCarro = document.createElement("th");
+
+    eliminarCarro = document.createElement("img");
+    eliminarCarro.src = "/img/icono-eliminar.png";
+    eliminarCarro.style = "height: 20px; width: 25px; filter: brightness(1.1); mix-blen-mode: multiply";
+    eliminarCarro.id = "iconoEliminar-" + indice;
+    eliminarCarro.className = "iconoEliminar";
+    
+    $("#cuerpoCarro").append(contenedorProductosCarro);
+    contenedorProductosCarro.append(imagenCarro);
+    contenedorProductosCarro.append(nombreCarro);
+    contenedorProductosCarro.append(precioCarro);
+    contenedorProductosCarro.append(cantidadCarro);
+    contenedorProductosCarro.append(totalProductoCarro)
+    contenedorProductosCarro.append(thEliminarCarro);
+    
+    thEliminarCarro.append(eliminarCarro);
+    
+    total()
   
-    if(arregloCarro.find(element => element.nombre == objetoCarro.nombre)){
-      var indiceEnCarro = arregloCarro.findIndex(element => element.nombre == objetoCarro.nombre);
-      var cantidadAñadida = document.getElementById("cantidadModal").value;
-      var montoProductos = parseInt(cantidadAñadida) + parseInt(arregloCarro[indiceEnCarro].cantidad);
-      
+    indice ++;
+  });
   
-      arregloCarro[indiceEnCarro].precio = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(parseInt(objetoCarro.precio.replace(/[^0-9]+/g, "")))
-      console.log(arregloCarro[indiceEnCarro].precio)
-      
-  
-      arregloCarro[indiceEnCarro].cantidad = montoProductos ;
-      arregloCarro[indiceEnCarro].totalProducto = parseInt(arregloCarro[indiceEnCarro].precio.replace(/[^0-9]+/g, "")) * montoProductos;
-  
-      alert("Cantidad Modificada")
-      $(".vacio").hide()
-    }else{    
-      alert("Producto añadido");
-      objetoCarro.totalProducto = parseInt(objetoCarro.precio.replace(/[^0-9]+/g, "")) * parseInt(objetoCarro.cantidad.replace(/[^0-9]+/g, ""))
-      
-      console.log(objetoCarro);
-      arregloCarro.push(objetoCarro);
-      $(".vacio").hide()
-  
+  $(".iconoEliminar").on("click",function(){
+    var idEliminar = this.getAttribute("id")[this.getAttribute("id").length - 1];
+    var idContenedorProducto = "#contenedorProducto-" + idEliminar;
+    
+    
+    $(idContenedorProducto).remove();
+    arregloCarro.splice(parseInt(idEliminar),1)
+    if(arregloCarro.length === 0){
+      $(".contenedorProducto").remove();
+      $("#headTablaCarro").hide();
+      $(".vacio").show();
+      $("#footerTabla").hide();
+      $(".totalBruto").remove();
+      $(".totalIVA").remove();
     }
     
-    arregloCarro.forEach(element => {
-      var contenedorProductosCarro = document.createElement("tr");
-      contenedorProductosCarro.className = "contenedorProducto";
-      contenedorProductosCarro.id = "contenedorProducto-" + indice
-      
-      imagenCarro = document.createElement("img");
-      imagenCarro.src = element.imagen;
-      imagenCarro.style = "width: 100px; height: 100px; object-fit: fit";
-  
-      nombreCarro = document.createElement("th");
-      nombreCarro.textContent = element.nombre
-  
-      cantidadCarro = document.createElement("th");
-      cantidadCarro.id = "cantidadCarro-" + indice
-      cantidadCarro.textContent = element.cantidad;
-  
-  
-      precioCarro = document.createElement("th");
-      precioCarro = element.precio;
-  
-      totalProductoCarro = document.createElement("th");
-      totalProductoCarro.textContent = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(element.totalProducto)
-  
-      thEliminarCarro = document.createElement("th");
-
-      
-
-      eliminarCarro = document.createElement("img");
-      eliminarCarro.src = "/img/icono-eliminar.png";
-      eliminarCarro.style = "height: 20px; width: 25px; filter: brightness(1.1); mix-blen-mode: multiply";
-      eliminarCarro.id = "iconoEliminar-" + indice;
-      eliminarCarro.className = "iconoEliminar";
-      
-        
-      $("#cuerpoCarro").append(contenedorProductosCarro);
-      contenedorProductosCarro.append(imagenCarro);
-      contenedorProductosCarro.append(nombreCarro);
-      contenedorProductosCarro.append(precioCarro);
-      contenedorProductosCarro.append(cantidadCarro);
-      contenedorProductosCarro.append(totalProductoCarro)
-      contenedorProductosCarro.append(thEliminarCarro);
-      
-      thEliminarCarro.append(eliminarCarro);
-      
-      $(".iconoEliminar").on("click",function(){
-        var idEliminar = this.getAttribute("id")[this.getAttribute("id").length - 1];
-        var idContenedorProducto = "contenedorProducto-" + idEliminar;
-        var contenedorBorrar = document.getElementById(idContenedorProducto)
-        contenedorBorrar.remove();
-        arregloCarro.splice(parseInt(idEliminar),1)
-        if(arregloCarro.length === 0){
-          $(".contenedorProducto").remove();
-          $("#headTablaCarro").hide();
-          $(".vacio").show()
-        }
-      });
-      
-
-      indice ++;
-    });
+    
+    total()
+}
+)
 })
 
+
 $("#botonVaciarCarro").on("click",function(){
-  arregloCarro = []
+  arregloCarro = [];
   $(".contenedorProducto").remove();
   $(".totalBruto").remove();
   $("#headTablaCarro").hide();
@@ -298,8 +281,7 @@ $("#botonVaciarCarro").on("click",function(){
   $("#footerTabla").hide()
   $(".totalBruto").remove();
   $(".totalIVA").remove();
-
-  $("#footerTabla").val();
+  
 })
 
 

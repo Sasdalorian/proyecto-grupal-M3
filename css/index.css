@@ -1,9 +1,46 @@
 input[type=number]::-webkit-inner-spin-button {
     opacity: 1
+    
 }
 
 #carrito {
     overflow:scroll;
     height:400px;
     width: fit-content;
+}
+
+.footerCard{
+    color: white;
+    background-color: rgb(29, 29, 29);
+    border-radius: 0%!important;
+}
+
+.divMedio{
+    max-width: 350px;
+    
+}
+
+
+.InputCantidad{
+    background-color: #584c4c;
+    color: white;
+}
+
+.card{
+    border-radius: 5%;
+}
+
+.btnAgregar:hover{
+    zoom: 1.1;
+    color: rgb(0, 0, 0)!important;
+    background-color: rgb(255, 255, 255)!important;
+}
+
+.modal-header, .modal-footer{
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.btn-close{
+    color: white;
 }
