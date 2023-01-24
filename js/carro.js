@@ -8,7 +8,9 @@ var idProducto,nombreCarro,cantidadCarro,precioCarro,idNombreCarro,imagenCarro,e
 
 $(".btnAgregar").on("click",function(){
   $(".contenedorProducto").remove();
+  $(".totalBruto").remove();
   $("#headTablaCarro").show();
+  $("#footerTabla").show()
  
   var objetoCarro = { nombre: undefined,
                       imagen: undefined,
@@ -93,6 +95,8 @@ $(".btnAgregar").on("click",function(){
     eliminarCarro.id = "iconoEliminar-" + indice;
     eliminarCarro.className = "iconoEliminar";
     
+
+ 
       
     $("#cuerpoCarro").append(contenedorProductosCarro);
     contenedorProductosCarro.append(imagenCarro);
@@ -101,8 +105,8 @@ $(".btnAgregar").on("click",function(){
     contenedorProductosCarro.append(cantidadCarro);
     contenedorProductosCarro.append(totalProductoCarro)
     contenedorProductosCarro.append(thEliminarCarro);
-    
     thEliminarCarro.append(eliminarCarro);
+    
 
     $(".iconoEliminar").on("click",function(){
       var idEliminar = this.getAttribute("id")[this.getAttribute("id").length - 1];
@@ -116,14 +120,62 @@ $(".btnAgregar").on("click",function(){
       if(arregloCarro.length === 0){
         $(".contenedorProducto").remove();
         $("#headTablaCarro").hide();
-        $(".vacio").show()
+        $(".vacio").show();
+        $("#footerTabla").hide();
+        $(".totalBruto").remove();
+        $(".totalIVA").remove();
       }
+      $(".totalBruto").remove();
+      $(".totalIVA").remove();
+      total()
     });
+    
+
+  
+   total()
 
     indice ++;
   });
+  //TOTALES
+  function total(){
+    $(".totalBruto").remove();
+    $(".totalIVA").remove();
+    
+    var totalBruto,iva,totalNeto,despacho,footerTabla,descuento;
+    sumaBruto = 0;
+    despacho = sumaBruto * 0.05
+    arregloCarro.forEach(element => {
+    sumaBruto += parseInt(element.precio.replace(/[^0-9]+/g, "")) * element.cantidad
+    });
+    iva = (sumaBruto / 1.19) * 0.19;
+    totalNeto = sumaBruto / 1.19;
+    console.log(Math.floor(iva));
+
+    if (sumaBruto >= 100000) {
+      descuento = despacho
+    }else{
+      descuento = 0
+    }
 
 
+
+    totalBruto = document.createElement("td");
+    totalBruto.setAttribute("colspan","2");
+    totalBruto.className = "totalBruto";
+    totalBruto.textContent = "TOTAL BRUTO: " + new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(sumaBruto);
+
+    var totalIVA= document.createElement("td");
+    totalIVA.setAttribute("colspan","2");
+    totalIVA.className = "totalIVA";
+    totalIVA.textContent = "IVA: " + new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(iva);
+
+
+    $("#footerTabla").append(totalIVA)
+    $("#footerTabla").append(totalBruto)
+    
+  }
+  
+ 
 })
 
 $("#agregarAlCarroModal").on("click",function (){
@@ -240,8 +292,15 @@ $("#agregarAlCarroModal").on("click",function (){
 $("#botonVaciarCarro").on("click",function(){
   arregloCarro = []
   $(".contenedorProducto").remove();
+  $(".totalBruto").remove();
   $("#headTablaCarro").hide();
-  $(".vacio").show()
+  $(".vacio").show();
+  $("#footerTabla").hide()
+  $(".totalBruto").remove();
+  $(".totalIVA").remove();
+
+  $("#footerTabla").val();
 })
+
 
 

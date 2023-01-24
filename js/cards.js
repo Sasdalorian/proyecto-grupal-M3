@@ -291,7 +291,7 @@ function creacionCards(element,index){
 
 
     divMedio = document.createElement("div"); 
-    divMedio.className = "card  gy-3 divMedio ";
+    divMedio.className = "card  gy-3 divMedio  ";
     divMedio.style = "object-fit: fit; border: none; min-width: 250px; background: rgba(0,0,0,0);  z-index: 1010";
     divMedio.id = "divMedio-" + i;
     
