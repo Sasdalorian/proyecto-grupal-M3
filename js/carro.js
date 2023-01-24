@@ -64,7 +64,7 @@ $(".btnAgregar").on("click",function(){
   arregloCarro.forEach(element => {
     var contenedorProductosCarro = document.createElement("tr");
     contenedorProductosCarro.className = "contenedorProducto";
-    
+    contenedorProductosCarro.id = "contenedorProducto-" + indice
     
     imagenCarro = document.createElement("img");
     imagenCarro.src = element.imagen;
@@ -91,6 +91,7 @@ $(".btnAgregar").on("click",function(){
     eliminarCarro.src = "/img/icono-eliminar.png";
     eliminarCarro.style = "height: 20px; width: 25px; filter: brightness(1.1); mix-blen-mode: multiply";
     eliminarCarro.id = "iconoEliminar-" + indice;
+    eliminarCarro.className = "iconoEliminar";
     
       
     $("#cuerpoCarro").append(contenedorProductosCarro);
@@ -102,6 +103,22 @@ $(".btnAgregar").on("click",function(){
     contenedorProductosCarro.append(thEliminarCarro);
     
     thEliminarCarro.append(eliminarCarro);
+
+    $(".iconoEliminar").on("click",function(){
+      var idEliminar = this.getAttribute("id")[this.getAttribute("id").length - 1];
+      console.log("id-index: " + idEliminar)
+      var idContenedorProducto = "contenedorProducto-" + idEliminar;
+      console.log("id contenedor producto: " + idContenedorProducto)
+      var contenedorBorrar = document.getElementById(idContenedorProducto)
+      console.log("contenedor producto: "+ contenedorBorrar)
+      contenedorBorrar.remove();
+      arregloCarro.splice(parseInt(idEliminar),1)
+      if(arregloCarro.length === 0){
+        $(".contenedorProducto").remove();
+        $("#headTablaCarro").hide();
+        $(".vacio").show()
+      }
+    });
 
     indice ++;
   });
@@ -208,7 +225,7 @@ $("#agregarAlCarroModal").on("click",function (){
         var contenedorBorrar = document.getElementById(idContenedorProducto)
         contenedorBorrar.remove();
         arregloCarro.splice(parseInt(idEliminar),1)
-        if($("#contenedorCard").length === 0){
+        if(arregloCarro.length === 0){
           $(".contenedorProducto").remove();
           $("#headTablaCarro").hide();
           $(".vacio").show()
