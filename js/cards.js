@@ -332,7 +332,7 @@ function creacionCards(element,index){
     boton = document.createElement("button");
     boton.type = "button";
     boton.id = "boton-" + i;
-    boton.className = "btn bg-dark btnAgregar";
+    boton.className = "btn bg-danger btnAgregar";
     boton.textContent = "Añadir al Carro";
     boton.style = "color: white"
     
