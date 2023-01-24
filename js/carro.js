@@ -85,12 +85,13 @@ $(".btnAgregar").on("click",function(){
     totalProductoCarro.textContent = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(element.totalProducto)
 
     thEliminarCarro = document.createElement("th");
+    
 
     eliminarCarro = document.createElement("img");
     eliminarCarro.src = "/img/icono-eliminar.png";
     eliminarCarro.style = "height: 20px; width: 25px; filter: brightness(1.1); mix-blen-mode: multiply";
     eliminarCarro.id = "iconoEliminar-" + indice;
-    eliminarCarro.className = "iconoEliminar";
+    
       
     $("#cuerpoCarro").append(contenedorProductosCarro);
     contenedorProductosCarro.append(imagenCarro);
@@ -159,11 +160,12 @@ $("#agregarAlCarroModal").on("click",function (){
     
     arregloCarro.forEach(element => {
       var contenedorProductosCarro = document.createElement("tr");
-      contenedorProductosCarro.className = "contenedorProducto"
+      contenedorProductosCarro.className = "contenedorProducto";
+      contenedorProductosCarro.id = "contenedorProducto-" + indice
       
       imagenCarro = document.createElement("img");
       imagenCarro.src = element.imagen;
-      imagenCarro.style = "width: 100px; height: 100px; ;"
+      imagenCarro.style = "width: 100px; height: 100px; object-fit: fit";
   
       nombreCarro = document.createElement("th");
       nombreCarro.textContent = element.nombre
@@ -180,12 +182,15 @@ $("#agregarAlCarroModal").on("click",function (){
       totalProductoCarro.textContent = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(element.totalProducto)
   
       thEliminarCarro = document.createElement("th");
-  
+
+      
+
       eliminarCarro = document.createElement("img");
       eliminarCarro.src = "/img/icono-eliminar.png";
       eliminarCarro.style = "height: 20px; width: 25px; filter: brightness(1.1); mix-blen-mode: multiply";
       eliminarCarro.id = "iconoEliminar-" + indice;
       eliminarCarro.className = "iconoEliminar";
+      
         
       $("#cuerpoCarro").append(contenedorProductosCarro);
       contenedorProductosCarro.append(imagenCarro);
@@ -196,11 +201,30 @@ $("#agregarAlCarroModal").on("click",function (){
       contenedorProductosCarro.append(thEliminarCarro);
       
       thEliminarCarro.append(eliminarCarro);
-  
+      
+      $(".iconoEliminar").on("click",function(){
+        var idEliminar = this.getAttribute("id")[this.getAttribute("id").length - 1];
+        var idContenedorProducto = "contenedorProducto-" + idEliminar;
+        var contenedorBorrar = document.getElementById(idContenedorProducto)
+        contenedorBorrar.remove();
+        arregloCarro.splice(parseInt(idEliminar),1)
+        if($("#contenedorCard").length === 0){
+          $(".contenedorProducto").remove();
+          $("#headTablaCarro").hide();
+          $(".vacio").show()
+        }
+      });
+      
+
       indice ++;
     });
 })
 
-
+$("#botonVaciarCarro").on("click",function(){
+  arregloCarro = []
+  $(".contenedorProducto").remove();
+  $("#headTablaCarro").hide();
+  $(".vacio").show()
+})
 
 

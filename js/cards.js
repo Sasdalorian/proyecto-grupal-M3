@@ -4,7 +4,13 @@
 //infoProducto[2] = zapatillas
 var infoProducto = [
     
-    [
+    [   {
+            nombre: "Zapatilla Converse Weapon",
+            imagen: "/img/calzado/converse.png",
+            codigo: 1234567890,
+            descripcion: "El ícono de la cancha de 1986, completamente transformado para lo que viene. Su capellada de cuero de primera calidad se une al cuello espumado de PU y a la suela de goma envolvente para ofrecer la máxima comodidad.",
+            precio: 59990
+        },
         {
             nombre: "Zapatillas Blaze Court",
             imagen: "/img/calzado/blaze-court.png",
@@ -86,6 +92,13 @@ var infoProducto = [
     }],
     [
         {
+            nombre: "Camiseta Seleccion Brasileña",
+            imagen: "/img/camisetas/brasil.png",
+            codigo: 1234567890,
+            descripcion: "Camiseta oficial seleccion Brasileña.",
+            precio: 53990
+        },
+        {
             nombre: "Camiseta Seleccion Argentina",
             imagen: "/img/camisetas/argentina.png",
             codigo: 1234567890,
@@ -166,7 +179,13 @@ var infoProducto = [
         }
     
     ],
-    [
+    [   {
+            nombre: "Capucha con bolsillo de canguro",
+            imagen: "/img/polerones/generico.png",
+            codigo: 7543214956671,
+            descripcion: "Poleron sobrio, sin estampado",
+            precio: 14990
+        },
         {
             nombre: "Poleron Anaheim Crew",
             imagen: "/img/polerones/anaheim floral crew.png",
@@ -268,11 +287,14 @@ function creacionCards(element,index){
     
     
     
-    divMedio = document.createElement("div"); 
-    divMedio.className = "card  gy-3 divMedio col-2";
-    divMedio.style = "object-fit: fit; border: none; max-width: 250px; min-width: 200px; background: rgba(0,0,0,0);  z-index: 1010";
-    divMedio.id = "divMedio-" + i;
 
+
+
+    divMedio = document.createElement("div"); 
+    divMedio.className = "card  gy-3 divMedio ";
+    divMedio.style = "object-fit: fit; border: none; min-width: 250px; background: rgba(0,0,0,0);  z-index: 1010";
+    divMedio.id = "divMedio-" + i;
+    
 
     divInterno = document.createElement("div");
     divInterno.className = "  card-body card-img-overlay divInterno";
@@ -378,7 +400,7 @@ if($("#mainIndex").val() =="1"){
         let numeros=[];
         var random1, random2;
        
-        let totalcards = 5;
+        let totalcards = 10;
         
         for (let i = 0; i < totalcards; i++) {
             var random1 = Math.floor(Math.random() * infoProducto.length);
@@ -399,6 +421,7 @@ if($("#mainIndex").val() =="1"){
                 return numeros;
             }
             random2 = numerosAleatoriosNoRepetidos(0,arreglo.length - 1,totalcards)
+            
             creacionCards(arreglo,random2[i]);
             
             

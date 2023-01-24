@@ -98,6 +98,7 @@ body{
 
 .iconoEliminar:hover {
    transform: scale(1.3); 
+   z-index: 1000;
  }
 /*  FOOTER  */
 .rrss{
