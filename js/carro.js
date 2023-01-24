@@ -1,5 +1,5 @@
 var arregloCarro = [];
-console.log(arregloCarro.length)
+
 
 if(arregloCarro.length == 0){
   $("#headTablaCarro").hide();
@@ -39,22 +39,23 @@ $(".btnAgregar").on("click",function(){
   
   if(arregloCarro.find(element => element.nombre == objetoCarro.nombre)){
     var indiceEnCarro = arregloCarro.findIndex(element => element.nombre == objetoCarro.nombre);
-    var cantidadAñadida = document.getElementById(idCantidad).value;
-    var montoProductos = parseInt(cantidadAñadida) + parseInt(arregloCarro[indiceEnCarro].cantidad);
-    
-
-    arregloCarro[indiceEnCarro].precio = parseInt(objetoCarro.precio.replace(/[^0-9]+/g, ""))
-    console.log(arregloCarro[indiceEnCarro].precio)
-    
-
-    arregloCarro[indiceEnCarro].cantidad = montoProductos ;
-    arregloCarro[indiceEnCarro].totalProducto = arregloCarro[indiceEnCarro].precio * montoProductos;
+      var cantidadAñadida = document.getElementById(idCantidad).value;
+      var montoProductos = parseInt(cantidadAñadida) + parseInt(arregloCarro[indiceEnCarro].cantidad);
+      
+  
+      arregloCarro[indiceEnCarro].precio = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(parseInt(objetoCarro.precio.replace(/[^0-9]+/g, "")))
+      console.log(arregloCarro[indiceEnCarro].precio)
+      
+  
+      arregloCarro[indiceEnCarro].cantidad = montoProductos ;
+      arregloCarro[indiceEnCarro].totalProducto = parseInt(arregloCarro[indiceEnCarro].precio.replace(/[^0-9]+/g, "")) * arregloCarro[indiceEnCarro].cantidad;
 
     alert("Cantidad Modificada")
     $(".vacio").hide()
   }else{    
     alert("Producto añadido");
-    console.log(objetoCarro.cantidad);
+    objetoCarro.totalProducto = parseInt(objetoCarro.precio.replace(/[^0-9]+/g, "")) * parseInt(objetoCarro.cantidad)
+    
     arregloCarro.push(objetoCarro);
     $(".vacio").hide()
 
@@ -62,11 +63,12 @@ $(".btnAgregar").on("click",function(){
   
   arregloCarro.forEach(element => {
     var contenedorProductosCarro = document.createElement("tr");
-    contenedorProductosCarro.className = "contenedorProducto"
+    contenedorProductosCarro.className = "contenedorProducto";
+    
     
     imagenCarro = document.createElement("img");
     imagenCarro.src = element.imagen;
-    imagenCarro.style = "width: 100px; height: 100px; ;"
+    imagenCarro.style = "width: 100px; height: 100px; margin-bottom: 10px;"
 
     nombreCarro = document.createElement("th");
     nombreCarro.textContent = element.nombre
@@ -87,7 +89,8 @@ $(".btnAgregar").on("click",function(){
     eliminarCarro = document.createElement("img");
     eliminarCarro.src = "/img/icono-eliminar.png";
     eliminarCarro.style = "height: 20px; width: 25px; filter: brightness(1.1); mix-blen-mode: multiply";
-    eliminarCarro.id = "iconoEliminar"
+    eliminarCarro.id = "iconoEliminar-" + indice;
+    eliminarCarro.className = "iconoEliminar";
       
     $("#cuerpoCarro").append(contenedorProductosCarro);
     contenedorProductosCarro.append(imagenCarro);
@@ -101,6 +104,8 @@ $(".btnAgregar").on("click",function(){
 
     indice ++;
   });
+
+
 })
 
 $("#agregarAlCarroModal").on("click",function (){
@@ -112,7 +117,8 @@ $("#agregarAlCarroModal").on("click",function (){
                         codigo: undefined,
                         descripcion: undefined,
                         precio: undefined,
-                        cantidad: 0
+                        cantidad: 1,
+                        totalProducto: 0
                       }
     var indice = 0;
     var idProducto,nombreCarro,cantidadCarro,precioCarro,imagenCarro,thEliminarCarro;
@@ -128,23 +134,29 @@ $("#agregarAlCarroModal").on("click",function (){
   
     if(arregloCarro.find(element => element.nombre == objetoCarro.nombre)){
       var indiceEnCarro = arregloCarro.findIndex(element => element.nombre == objetoCarro.nombre);
-      var cantidadAñadida = document.getElementById(idCantidad).value;
+      var cantidadAñadida = document.getElementById("cantidadModal").value;
       var montoProductos = parseInt(cantidadAñadida) + parseInt(arregloCarro[indiceEnCarro].cantidad);
       
+  
+      arregloCarro[indiceEnCarro].precio = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(parseInt(objetoCarro.precio.replace(/[^0-9]+/g, "")))
+      console.log(arregloCarro[indiceEnCarro].precio)
       
+  
       arregloCarro[indiceEnCarro].cantidad = montoProductos ;
-      arregloCarro[indiceEnCarro].precio = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(montoProductos * parseInt(objetoCarro.precio.replace(/[^0-9]+/g, "")));
+      arregloCarro[indiceEnCarro].totalProducto = parseInt(arregloCarro[indiceEnCarro].precio.replace(/[^0-9]+/g, "")) * montoProductos;
+  
       alert("Cantidad Modificada")
       $(".vacio").hide()
-      }else{    
-        alert("Producto añadido")
-        arregloCarro.push(objetoCarro)
-        $(".vacio").hide()
-    
-      }
-    
-    
+    }else{    
+      alert("Producto añadido");
+      objetoCarro.totalProducto = parseInt(objetoCarro.precio.replace(/[^0-9]+/g, "")) * parseInt(objetoCarro.cantidad.replace(/[^0-9]+/g, ""))
+      
+      console.log(objetoCarro);
+      arregloCarro.push(objetoCarro);
+      $(".vacio").hide()
   
+    }
+    
     arregloCarro.forEach(element => {
       var contenedorProductosCarro = document.createElement("tr");
       contenedorProductosCarro.className = "contenedorProducto"
@@ -160,28 +172,35 @@ $("#agregarAlCarroModal").on("click",function (){
       cantidadCarro.id = "cantidadCarro-" + indice
       cantidadCarro.textContent = element.cantidad;
   
+  
       precioCarro = document.createElement("th");
-      precioCarro = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(parseInt(element.precio.replace(/[^0-9]+/g, "")))
-
-
+      precioCarro = element.precio;
+  
+      totalProductoCarro = document.createElement("th");
+      totalProductoCarro.textContent = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(element.totalProducto)
+  
       thEliminarCarro = document.createElement("th");
-
+  
       eliminarCarro = document.createElement("img");
       eliminarCarro.src = "/img/icono-eliminar.png";
       eliminarCarro.style = "height: 20px; width: 25px; filter: brightness(1.1); mix-blen-mode: multiply";
-      eliminarCarro.id = "iconoEliminar";
-  
+      eliminarCarro.id = "iconoEliminar-" + indice;
+      eliminarCarro.className = "iconoEliminar";
+        
       $("#cuerpoCarro").append(contenedorProductosCarro);
       contenedorProductosCarro.append(imagenCarro);
       contenedorProductosCarro.append(nombreCarro);
-      contenedorProductosCarro.append(cantidadCarro);
       contenedorProductosCarro.append(precioCarro);
+      contenedorProductosCarro.append(cantidadCarro);
+      contenedorProductosCarro.append(totalProductoCarro)
       contenedorProductosCarro.append(thEliminarCarro);
+      
       thEliminarCarro.append(eliminarCarro);
   
       indice ++;
-    }
-  )
+    });
 })
+
+
 
 

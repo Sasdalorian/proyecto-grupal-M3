@@ -96,7 +96,7 @@ body{
    color: white;
 }
 
-#iconoEliminar:hover {
+.iconoEliminar:hover {
    transform: scale(1.3); 
  }
 /*  FOOTER  */
