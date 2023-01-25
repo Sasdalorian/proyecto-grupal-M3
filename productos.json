@@ -1,0 +1,269 @@
+
+[
+[  
+    {
+        "nombre": "Zapatilla Converse Weapon",
+        "imagen": "/img/calzado/converse.png",
+        "codigo": 1234567890,
+        "descripcion": "El ícono de la cancha de 1986, completamente transformado para lo que viene. Su capellada de cuero de primera calidad se une al cuello espumado de PU y a la suela de goma envolvente para ofrecer la máxima comodidad.",
+        "precio": 59990
+    },
+    {
+        "nombre": "Zapatillas Blaze Court",
+        "imagen": "/img/calzado/blaze-court.png",
+        "codigo": 1234567890,
+        "descripcion": "zapatilla de basquetball unisex",
+        "precio": 49990
+    },
+    {
+        "nombre": "Zapatilla Deviaten Nitro",
+        "imagen": "/img/calzado/deviaten-nitro.png",
+        "codigo": 1234567890,
+        "descripcion": "zapatilla running mujer color verde",
+        "precio": 57990
+
+    },
+    {
+        "nombre": "Zapatilla Florence",
+        "imagen": "/img/calzado/florence.png",
+        "codigo": 1234567890,
+        "descripcion": "zapatillas urbanas mujer",
+        "precio": 37990
+
+    },
+    {
+        "nombre": "Zapatillas Magnify Nitro",
+        "imagen": "/img/calzado/magnify-nitro.png",
+        "codigo": 1234567890,
+        "descripcion": "zapatillas running hombre color rojo",
+        "precio": 104990
+
+    },
+    {
+        "nombre": "Zapatilla Mercurial Victory",
+        "imagen": "/img/calzado/mercurial-victory.jpg",
+        "codigo": 1234567890,
+        "descripcion": "zapatillas baby futbol unisex",
+        "precio": 98990
+
+    },
+    {
+        "nombre": "Zapatos Mercury",
+        "imagen": "/img/calzado/mercury.jfif",
+        "codigo": 1234567890,
+        "descripcion": "Zapatos de futbol mujer color dorado ",
+        "precio": 74990
+
+    },
+    {
+        "nombre": "Zapatillas Slip Stream",
+        "imagen": "/img/calzado/slipstream.png",
+        "codigo": 1234567890,
+        "descripcion": "zapatilla urbana de caña alta unisex ",
+        "precio": 64990
+
+    },
+    {
+        "nombre": "Zapatilla Suede Classic XXI",
+        "imagen": "/img/calzado/suede-classicxxi.png",
+        "codigo": 1234567890,
+        "descripcion": "Zapatilla urbana mujer color rosado",
+        "precio": 89990
+
+    },
+    {
+        "nombre": "Zapatos Superfly",
+        "imagen": "/img/calzado/superfly.jfif",
+        "codigo": 1234567890,
+        "descripcion": "Zapato de futbol hombre color rojo",
+        "precio": 49990
+
+    },
+    {
+        "nombre": "Zapatillas Voyage Nitro",
+        "imagen": "/img/calzado/voyage-nitro.png",
+        "codigo": 1234567890,
+        "descripcion": "zapatillas running hombre color negro",
+        "precio": 59990
+
+    }
+],
+
+[
+    {
+        "nombre": "Camiseta Seleccion Brasileña",
+        "imagen": "/img/camisetas/brasil.png",
+        "codigo": 1234567890,
+        "descripcion": "Camiseta oficial seleccion Brasileña.",
+        "precio": 53990
+    },
+    {
+        "nombre": "Camiseta Seleccion Argentina",
+        "imagen": "/img/camisetas/argentina.png",
+        "codigo": 1234567890,
+        "descripcion": "Camiseta oficial seleccion Argentina 3 estrellas",
+        "precio": 53990
+    },
+    {
+        "nombre": "Camiseta Barcelona",
+        "imagen": "/img/camisetas/barca.jfif",
+        "codigo": 1234567890,
+        "descripcion": "Camiseta Barcelona 22-23 Oficial",
+        "precio": 45990
+
+    },
+    {
+        "nombre": "Camiseta Boca Juniors",
+        "imagen": "/img/camisetas/boca.jfif",
+        "codigo": 1234567890,
+        "descripcion": "Nueva camiseta de Boca oficial y de visitante",
+        "precio": 39990
+
+    },
+    {
+        "nombre": "Camiseta seleccion chilena",
+        "imagen": "/img/camisetas/chile.jfif",
+        "codigo": 1234567890,
+        "descripcion": "Camiseta seleccion chilena local  22-23 oficial",
+        "precio": 39490
+
+    },
+    {
+        "nombre": "Camiseta Jordan Flight",
+        "imagen": "/img/camisetas/jordan-flight.png",
+        "codigo": 1234567890,
+        "descripcion": "Camiseta diseno zapatillas Jordan color negra",
+        "precio": 32430
+
+    },
+    {
+        "nombre": "Camiseta Jordan",
+        "imagen": "/img/camisetas/jordan3.png",
+        "codigo": 1234567890,
+        "descripcion": "Camiseta diseno Jordan color negra",
+        "precio": 53980
+
+    },
+    {
+        "nombre": "Camiseta Jordan Flight",
+        "imagen": "/img/camisetas/jordan-flight.png",
+        "codigo": 1234567890,
+        "descripcion": "Camiseta Jordan Flight mujer diseno espalda color roja",
+        "precio": 56990
+
+    },
+    {
+        "nombre": "Camiseta Lebron",
+        "imagen": "/img/camisetas/lakers.jfif",
+        "codigo": 1234567890,
+        "descripcion": "Camiseta basquetball oficial Lebron",
+        "precio": 47950
+
+    },
+    {
+        "nombre": "Camiseta PSG",
+        "imagen": "/img/camisetas/psg.jfif",
+        "codigo": 1234567890,
+        "descripcion": "Camiseta primera equipacion PSG 22-23 oficial",
+        "precio": 42990
+
+    },
+    {
+        "nombre": "Camiseta Running",
+        "imagen": "/img/camisetas/runningmc.jfif",
+        "codigo": 1234567890,
+        "descripcion": "Camiseta running mujer manga corta diseno team colores ",
+        "precio": 20990
+
+    }
+
+],
+[
+    {
+        "nombre": "Capucha con bolsillo de canguro",
+        "imagen": "/img/polerones/generico.png",
+        "codigo": 7543214956671,
+        "descripcion": "Poleron sobrio, sin estampado",
+        "precio": 14990
+    },
+    {
+        "nombre": "Poleron Anaheim Crew",
+        "imagen": "/img/polerones/anaheim floral crew.png",
+        "codigo": 7543214956671,
+        "descripcion": "Poleron mujer diseno floral",
+        "precio": 27900
+    },
+    {
+        "nombre": "Poleron Unisex",
+        "imagen": "/img/polerones/diseno espalda.png",
+        "codigo": 7543214830377,
+        "descripcion": "Poleron diseno espalda unisex color negro con gorro",
+        "precio": 40940
+
+    },
+    {
+        "nombre": "Poleron coleccion",
+        "imagen": "/img/polerones/fleece tie dye pullover.png",
+        "codigo": 7543214906186,
+        "descripcion": "Poleron ninos diseno  coleccion color azul.",
+        "precio": 34500
+
+    },
+    {
+        "nombre": "Poleron Nike Air",
+        "imagen": "/img/polerones/Nike-Air.png",
+        "codigo": 7543214564112,
+        "descripcion": "Poleron unisex nike air negro",
+        "precio": 39950
+
+    },
+    {
+        "nombre": "Poleron One Piece",
+        "imagen": "/img/polerones/one piece vans.png",
+        "codigo": 7543214519667,
+        "descripcion": "Poleron unisex Vans diseno one piece",
+        "precio": 25990
+
+    },
+    {
+        "nombre": "Poleron One Piece",
+        "imagen": "/img/polerones/one piece.png",
+        "codigo": 7543214621041,
+        "descripcion": "Poleron one piece off the wall color azul",
+        "precio": 27990
+
+    },
+    {
+        "nombre": "Poleron Therma Fit",
+        "imagen": "/img/polerones/Therma Fit Insectos.png",
+        "codigo": 7543214874446,
+        "descripcion": "Poleron unisex diseno insectos",
+        "precio": 37980
+
+    },
+    {
+        "nombre": "Poleron Vans",
+        "imagen": "/img/polerones/vans hombre.png",
+        "codigo": 7543214875716,
+        "descripcion": "Poleron negro vans hombre",
+        "precio": 29990
+
+    },
+    {
+        "nombre": "Poleron Vans",
+        "imagen": "/img/polerones/vans-off the wall.png",
+        "codigo": 7543214103528,
+        "descripcion": "Poleron ninos vans off the wall",
+        "precio": 29990
+
+    },
+    {
+        "nombre": "Poleron Floral Animal Crew",
+        "imagen": "/img/polerones/floral animal crew.png",
+        "codigo": 7543214254000,
+        "descripcion": "Poleron mujer Animal",
+        "precio": 25100
+
+    }
+]
+]
