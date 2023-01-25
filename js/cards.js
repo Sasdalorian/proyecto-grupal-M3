@@ -304,7 +304,7 @@ function creacionCards(element,index){
     
     
     imgCard = document.createElement("img");
-    imgCard.className = " img-fluid card-img-top rounded-top imagenCard";
+    imgCard.className = " img-fluid card-img-top imagenCard";
     imgCard.id = "img-" + i;
     imgCard.src= element[index].imagen;
     imgCard.alt  = "Imagen no Disponible";
