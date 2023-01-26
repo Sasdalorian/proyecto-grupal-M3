@@ -7,6 +7,7 @@ input[type=number]::-webkit-inner-spin-button {
     overflow:scroll;
     height:400px;
     width: fit-content;
+    
 }
 
 .footerCard{
@@ -29,7 +30,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 
 .btnAgregar:hover,#agregarAlCarroModal:hover{
-    zoom: 1.1;
+    transition:all .5s ease-in-out;
     color: rgb(0, 0, 0)!important;
     background-color: rgb(255, 255, 255)!important;
 }
@@ -72,3 +73,4 @@ input[type=number]::-webkit-inner-spin-button {
 #footerTabla{
     border-top: 2px black solid;
 }
+
