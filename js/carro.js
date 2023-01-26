@@ -1,52 +1,80 @@
 var arregloCarro = [];
 
+$("#tituloCarro").show();
+
 if(arregloCarro.length == 0){
   $("#headTablaCarro").hide();
+  $("#footerTabla").hide();
+  $("#botonesCarro").hide();
+  $("#caraTriste").show();
 }else{
   $("#headTablaCarro").show();
+  $("#footerTabla").show();
+  $("#botonesCarro").show();
+  $("#caraTriste").hide();
 }
 var idProducto,nombreCarro,cantidadCarro,precioCarro,idNombreCarro,imagenCarro,eliminarCarro,thEliminarCarro,totalProductoCarro,totalCarro;
 
 function total(){
   $(".totalBruto").remove();
   $(".totalIVA").remove();
-  
+  $(".valorDespacho").remove();
+  $(".totalneto").remove();
+
   var totalBruto,iva,totalNeto,despacho,descuento;
   sumaBruto = 0;
   iva = 0;
   arregloCarro.forEach(element => {
     sumaBruto += parseInt(element.precio.replace(/[^0-9]+/g, "")) * parseInt(element.cantidad)
   });
-  despacho = sumaBruto * 0.05
-  
-  iva = (sumaBruto / 1.19) * 0.19;
-  totalNeto = sumaBruto / 1.19;
 
+  iva = (sumaBruto / 1.19) * 0.19;
+
+  //Si el total es menor a 100 mil no hace descuento, respetando el requerimiento 
   if (sumaBruto >= 100000) {
-    descuento = despacho
+    despacho = sumaBruto * 0.05
   }else{
-    descuento = 0
+    despacho = 0
   }
 
-  totalBruto = document.createElement("td");
-  totalBruto.setAttribute("colspan","2");
+  totalNeto = Math.round((sumaBruto / 1.19) + despacho) ;
+
+  totalBruto = document.createElement("div");
   totalBruto.className = "totalBruto";
-  totalBruto.textContent = "TOTAL BRUTO: " + new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(sumaBruto);
+  totalBruto.textContent =  new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(sumaBruto);
+  totalBruto.style = "justify-content: left; display: flex; padding-left: 5%;";
+  
+  var totalneto= document.createElement("div"); 
+  totalneto.className = "totalneto";
+  totalneto.textContent = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(totalNeto);
+  totalneto.style = "justify-content: left; display: flex; padding-left: 5%;";
+  
+  var valorDespacho = document.createElement("div");
+  valorDespacho.className = "valorDespacho";
+  valorDespacho.textContent =  new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(despacho);
+  valorDespacho.style = "justify-content: left; display: flex; padding-left: 5%;";
 
-  var totalIVA= document.createElement("td");
-  totalIVA.setAttribute("colspan","2");
+  var totalIVA= document.createElement("div"); 
   totalIVA.className = "totalIVA";
-  totalIVA.textContent = "IVA: " + new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(iva);
+  totalIVA.textContent = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(iva);
+  totalIVA.style = "justify-content: left; display: flex; padding-left: 5%;";
 
-  $("#footerTabla").append(totalIVA)
-  $("#footerTabla").append(totalBruto)
+  $("#neto").append(totalneto)
+  $("#iva").append(totalIVA)
+  $("#despacho").append(valorDespacho)
+  $("#total").append(totalBruto)
 }
+
 
 $(".btnAgregar").on("click",function(){
   $(".contenedorProducto").remove();
   $(".totalBruto").remove();
+  $(".totalIVA").remove();
+  $(".totalneto").remove();
   $("#headTablaCarro").show();
   $("#footerTabla").show();
+  $("#caraTriste").hide();
+  $("#botonesCarro").show();
   
   var objetoCarro = { nombre: undefined,
                       imagen: undefined,
@@ -168,7 +196,10 @@ $(".btnAgregar").on("click",function(){
         $("#footerTabla").hide()
         $(".totalBruto").remove();
         $(".totalIVA").remove();
-      }
+        $("#botonesCarro").hide();
+          $("#footerTabla").hide();
+          $("#caraTriste").show();
+      }      
       
       total()
     });
@@ -178,8 +209,12 @@ $(".btnAgregar").on("click",function(){
 $("#agregarAlCarroModal").on("click",function(){
   $(".contenedorProducto").remove();
   $(".totalBruto").remove();
+  $(".totalIVA").remove();
+  $(".totalneto").remove();
   $("#headTablaCarro").show();
   $("#footerTabla").show();
+  $("#caraTriste").hide();
+  $("#botonesCarro").show();
   
   var objetoCarro = { nombre: undefined,
                       imagen: undefined,
@@ -280,8 +315,6 @@ $("#agregarAlCarroModal").on("click",function(){
       }
       
       $(idContenedorProducto).remove();
-      
-      console.log(arregloCarro)
 
       if(arregloCarro.length == 0){
         $(".contenedorProducto").remove();
@@ -291,7 +324,12 @@ $("#agregarAlCarroModal").on("click",function(){
         $("#footerTabla").hide()
         $(".totalBruto").remove();
         $(".totalIVA").remove();
-      }
+        $("#botonesCarro").hide();
+        $("#footerTabla").hide();
+        $("#caraTriste").show();
+      }      
+      
+      
       
       total()
     });
@@ -308,7 +346,11 @@ $("#botonVaciarCarro").on("click",function(){
   $("#footerTabla").hide()
   $(".totalBruto").remove();
   $(".totalIVA").remove();
-  
+  $("#botonesCarro").hide();
+ 
+  $("#footerTabla").hide();
+ 
+  $("#caraTriste").show();
 })
 
 
