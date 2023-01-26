@@ -7,9 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/formularioEmail.scss">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/cardsIndex.css">
+ 
   
   <title>Deportes JS</title>
 </head>
@@ -102,7 +104,7 @@
                   </div>
                   <div id="botonesCarro">
                     <button class="button-vaciar u-full-width btn bg-secondary" id="botonVaciarCarro">Vaciar Carrito</button>
-                    <button class="button-finalizar u-full-width btn bg-dark">Finalizar Compra</button>
+                    <button class="button-finalizar u-full-width btn bg-dark " data-bs-toggle="modal" data-bs-target="#exampleModal">Finalizar Compra</button>
                   </div>
                 </div>
                
@@ -154,7 +156,91 @@
     </div>
     
   </main>
-
+  
+  <!-- Modal formulario envio mail-->
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tituloBoleta">Finalización de Compra</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="container">
+          <form class="p-5 needs-validation" novalidate>
+            <h5 class=" mb-3">Complete el formulario</h5>
+            <div class="mb-3 form-floating" >
+              <input type="text" class="form-control" id="nombreContacto" aria-describedby="emailHelp" required>
+              <label for="nombreContacto" class="form-label">Nombre de quien recibe</label>
+              <div class="valid-feedback">
+                Ok!
+              </div>
+              <div class="invalid-feedback">
+                Debes ingresar un nombre
+              </div>
+            </div>
+            <div class="mb-3 form-floating ">
+              <label for="region-contacto" class="form-label">Región</label>
+              <select onchange="desplegarComuna()" id="region-contacto" class="form-select form-floating pt-2" required>
+                <option value="" >Region</option>
+                <option value="arica">Arica y Parinacota</option>
+                <option value="tarapaca">Tarapacá</option>
+                <option value="antofagasta">Antofagasta</option>
+                <option value="atacama">Atacama</option>
+                <option value="coquimbo">Coquimbo</option>
+                <option value="valparaiso">Valparaíso</option>
+                <option value="o’Higgins">Región del Libertador Gral. Bernardo O’Higgins</option>
+                <option value="maule">Región del Maule</option>
+                <option value="biobio">Región del Biobío</option>
+                <option value="araucania">Región de la Araucanía</option>
+                <option value="rios">Región de Los Ríos</option>
+                <option value="lagos">Región de Los Lagos</option>
+                <option value="aisen">Región Aisén del Gral. Carlos Ibáñez del Campo</option>
+                <option value="magallanes">Región de Magallanes y de la Antártica Chilena</option>
+                <option value="metropolitana">Región Metropolitana de Santiago</option>
+              </select>
+              <div class="valid-feedback">
+                Ok!
+              </div>
+              <div class="invalid-feedback">
+                Seleciona una región válida.
+              </div>
+            </div>
+            <div class="mb-3 form-floating">
+              <select  id="comuna-contacto" class="form-select form-floating " required>
+                <option value="">Comuna</option>
+              </select>
+              <div class="valid-feedback">
+                Ok!
+              </div>
+              <div class="invalid-feedback">
+                Selecciona una comuna.
+              </div>
+            <div class="mb-3 mt-3 form-floating" >
+              <input type="text" class="form-control" id="direccionContacto" aria-describedby="emailHelp" required>
+              <label for="direccionContacto" class="form-label">Dirección</label>
+              <div class="valid-feedback">
+                Ok!
+              </div>
+              <div class="invalid-feedback">
+                Ingresa una dirección.
+              </div>
+            </div>
+            <div class="mb-3 form-floating">
+              <input type="email" class="form-control form-floating" id="correoContacto" required>
+              <label for="correoContacto" class="form-label">Correo electrónico</label>
+              <div class="valid-feedback">
+                Ok!
+              </div>
+              <div class="invalid-feedback">
+                Ingresa un correo válido.
+              </div>
+            </div>
+            <button type="button" class="btn btn-dark" >Enviar Boleta</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer>
@@ -187,8 +273,27 @@
   <script src="/node_modules/jquery/dist/jquery.min.js"></script>
   <script src="/js/cards.js"></script>
   <script src="/js/carro.js"></script>
-  <script type="module">
-    import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
+  <script src="/js/formulario.js"></script>
+  <script>
+    (function () {
+      'use strict'
+    
+      // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+      var forms = document.querySelectorAll('.needs-validation')
+    
+      // Bucle sobre ellos y evitar el envío
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('click', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+    
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
   </script>
 </body>
 
