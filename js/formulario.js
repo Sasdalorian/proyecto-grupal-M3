@@ -169,3 +169,32 @@ function desplegarComuna(){
             break;
     }
 }
+
+(function () {
+    'use strict'
+  
+    // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Bucle sobre ellos y evitar el envío
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('click', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }else{
+            //Enviar email desde acá
+
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+
+
+
+
+
+
