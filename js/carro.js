@@ -1,6 +1,8 @@
-var arregloCarro = [];
 
-$("#tituloCarro").show();
+
+var arregloCarro = []
+
+
 
 if(arregloCarro.length == 0){
   $("#headTablaCarro").hide();
@@ -152,7 +154,7 @@ $(".btnAgregar").on("click",function(){
     
     eliminarCarro = document.createElement("img");
     eliminarCarro.src = "/img/icono-eliminar.png";
-    eliminarCarro.style = "height: 20px; width: 25px; filter: brightness(1.1); mix-blen-mode: multiply";
+    eliminarCarro.style = "height: 20px; width: 25px; filter: brightness(1.1); mix-blen-mode: multiply; transition:all .5s ease-in-out;";
     eliminarCarro.id = "iconoEliminar-" + indice;
     eliminarCarro.className = "iconoEliminar";
   
@@ -334,6 +336,7 @@ $("#agregarAlCarroModal").on("click",function(){
       total()
     });
   });
+  
 })
 
 
@@ -354,4 +357,5 @@ $("#botonVaciarCarro").on("click",function(){
 })
 
 
-
+console.log(arregloCarro)
+localStorage.setItem('arreglo' ,JSON.stringify(arregloCarro));

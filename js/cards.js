@@ -294,6 +294,7 @@ function creacionCards(element,index){
     divMedio.className = "card  gy-3 divMedio  ";
     divMedio.style = "object-fit: fit; border: none; min-width: 250px; background: rgba(0,0,0,0);  z-index: 1010";
     divMedio.id = "divMedio-" + i;
+    divMedio.title = "Click para mas detalles"
     
 
     divInterno = document.createElement("div");
@@ -311,6 +312,7 @@ function creacionCards(element,index){
     imgCard.style = " object-fit: fit";
     objeto.imagen = element[index].imagen; //asignación del los atributos al objeto que irá en el arreglo de productos mostrados en pantalla (arregloCard[])
     
+
     tituloCard = document.createElement("h4");
     tituloCard.className = "card-title ps-2";
     tituloCard.textContent = element[index].nombre;
