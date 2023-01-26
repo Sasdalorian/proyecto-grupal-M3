@@ -11,7 +11,10 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/cardsIndex.css">
- 
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script>emailjs.init('D9AH1jUDDqq_3PJOW');</script>
   
   <title>Deportes JS</title>
 </head>
@@ -162,14 +165,14 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="tituloBoleta">Finalización de Compra</h5>
+          <h5 class="modal-title" id="tituloBoleta">Formulario de Compra</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="container">
-          <form class="p-5 needs-validation" novalidate>
+          <form class="p-5 needs-validation"id="formulario" novalidate>
             <h5 class=" mb-3">Complete el formulario</h5>
             <div class="mb-3 form-floating" >
-              <input type="text" class="form-control" id="nombreContacto" aria-describedby="emailHelp" required>
+              <input type="text" class="form-control" id="to_name" aria-describedby="emailHelp" required>
               <label for="nombreContacto" class="form-label">Nombre de quien recibe</label>
               <div class="valid-feedback">
                 Ok!
@@ -226,7 +229,7 @@
               </div>
             </div>
             <div class="mb-3 form-floating">
-              <input type="email" class="form-control form-floating" id="correoContacto" required>
+              <input type="email" class="form-control form-floating" name="emailUsuario" id="emailUsuario" required>
               <label for="correoContacto" class="form-label">Correo electrónico</label>
               <div class="valid-feedback">
                 Ok!
@@ -235,7 +238,8 @@
                 Ingresa un correo válido.
               </div>
             </div>
-            <button type="button" class="btn btn-dark" >Enviar Boleta</button>
+            <div id="contenidoCarro" style="display: none;"></div>
+            <button onclick="enviarEmail()" type="button" class="btn btn-dark" id="enviarBoleta" data-bs-dismiss="modal" aria-label="Close">Enviar Boleta</button>
           </form>
         </div>
       </div>
@@ -274,27 +278,8 @@
   <script src="/js/cards.js"></script>
   <script src="/js/carro.js"></script>
   <script src="/js/formulario.js"></script>
-  <script>
-    (function () {
-      'use strict'
-    
-      // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
-      var forms = document.querySelectorAll('.needs-validation')
-    
-      // Bucle sobre ellos y evitar el envío
-      Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-          form.addEventListener('click', function (event) {
-            if (!form.checkValidity()) {
-              event.preventDefault()
-              event.stopPropagation()
-            }
-    
-            form.classList.add('was-validated')
-          }, false)
-        })
-      })()
-  </script>
+  
+ 
 </body>
 
 </html>
