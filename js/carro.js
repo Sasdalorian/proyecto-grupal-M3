@@ -379,6 +379,7 @@ function enviarEmail() {
       $("#direccionContacto").val() = "";
       $("#comuna-contacto").val() = "";
       $("#region-contacto").val() = "";
+      arregloCarro = []
       console.log(res)
       alert("Mensaje enviado correctamente")
     }
