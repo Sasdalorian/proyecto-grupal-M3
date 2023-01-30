@@ -404,7 +404,7 @@ function enviarEmail() {
                                                             "\n" + element.codigo +
                                                             "\nPrecio unitario: " + element.precio +
                                                             "\nCantidad: " + element.cantidad +
-                                                            "\nTotal Producto: " + new Intl.NumberFormat('es-CL', { currency: 'CLP', style: 'currency' }).format(element.totalProducto) + "\n--------------------\n";
+                                                            "\nTotal Producto: " + new Intl.NumberFormat('es-CL', { currency: 'CLP', style: 'currency' }).format(element.totalProducto) + "\n----------------------------------------\n";
 
     ind++
   });
@@ -412,11 +412,11 @@ function enviarEmail() {
     to_name: document.getElementById("to_name").value,
     email: document.getElementById("emailUsuario").value,
     message:  "PRODUCTOS: \n" + document.getElementById("contenidoCarro").innerHTML +
-              "\n================\nNeto: " + new Intl.NumberFormat('es-CL', { currency: 'CLP', style: 'currency' }).format(Math.floor(totalNeto)) + 
+              "\n================================\nNeto: " + new Intl.NumberFormat('es-CL', { currency: 'CLP', style: 'currency' }).format(Math.floor(totalNeto)) + 
               "\nIVA: " + new Intl.NumberFormat('es-CL', { currency: 'CLP', style: 'currency' }).format(Math.floor(iva)) + 
               "\nDESPACHO: " + new Intl.NumberFormat('es-CL', { currency: 'CLP', style: 'currency' }).format(Math.floor(despacho))  + 
               "\nTOTAL: " + new Intl.NumberFormat('es-CL', { currency: 'CLP', style: 'currency' }).format(Math.floor(sumaBruto))  + 
-              "\n================\nDIRECCIÓN: " + document.getElementById("direccionContacto").value +
+              "\n================================\nDIRECCIÓN: " + document.getElementById("direccionContacto").value +
               "\nCOMUNA: " + document.getElementById("comuna-contacto").value + 
               "\nREGIÓN: " + document.getElementById("region-contacto").value
   };
