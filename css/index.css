@@ -11,9 +11,10 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .footerCard{
-    color: white;
-    background-color: rgb(29, 29, 29);
+    color: black;
+    background-color: rgb(187, 187, 187);
     border-radius: 0%!important;
+    padding-left: 1rem;
 }
 
 .divMedio{
